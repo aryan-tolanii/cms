@@ -17,6 +17,16 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 
+const normalizeOrigin = (value) => value?.replace(/\/$/, "");
+const allowedOrigins = new Set(
+  [
+    normalizeOrigin(process.env.CLIENT_URL),
+    "https://cms-frontnd.onrender.com",
+    "http://localhost:5173",
+    "http://localhost:3000",
+  ].filter(Boolean),
+);
+
 app.use(
   helmet({
     crossOriginResourcePolicy: {
@@ -26,7 +36,14 @@ app.use(
 );
 app.use(
   cors({
-    origin: "https://cms-frontnd.onrender.com/",
+    origin: (origin, callback) => {
+      // Allow server-to-server requests or same-origin tools without an Origin header.
+      if (!origin || allowedOrigins.has(normalizeOrigin(origin))) {
+        return callback(null, true);
+      }
+
+      return callback(new Error(`CORS blocked for origin: ${origin}`));
+    },
     credentials: true,
   }),
 );
