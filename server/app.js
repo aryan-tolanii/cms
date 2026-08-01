@@ -26,7 +26,7 @@ app.use(
 );
 app.use(
   cors({
-    origin: "http://localhost:5174",
+    origin: "https://cms-frontnd.onrender.com/",
     credentials: true,
   }),
 );
