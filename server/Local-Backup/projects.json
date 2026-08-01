@@ -1,0 +1,2511 @@
+[
+  {
+    "_id": "6a5494efeb4529b9f7e1f6d4",
+    "general": {
+      "projectName": "tes1.1",
+      "builderName": "test2",
+      "slug": "tes11",
+      "projectType": "Industrial",
+      "description": "hey this is test"
+    },
+    "contact": {
+      "phone": "",
+      "whatsapp": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "",
+      "pincode": "",
+      "googleMaps": ""
+    },
+    "media": {
+      "coverImage": null,
+      "gallery": []
+    },
+    "videos": [],
+    "brochure": {
+      "title": "",
+      "fileUrl": ""
+    },
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Draft",
+      "isDeleted": true
+    },
+    "createdAt": "2026-07-13T07:34:07.971Z",
+    "updatedAt": "2026-07-13T09:07:54.362Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a54b83eeb4529b9f7e1f757",
+    "general": {
+      "projectName": "hey1",
+      "builderName": "hey2",
+      "slug": "hey1",
+      "projectType": "Commercial",
+      "description": "hey 12 3 4"
+    },
+    "contact": {
+      "phone": "",
+      "whatsapp": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "",
+      "pincode": "",
+      "googleMaps": ""
+    },
+    "media": {
+      "coverImage": null,
+      "gallery": []
+    },
+    "videos": [],
+    "brochure": {
+      "title": "",
+      "fileUrl": ""
+    },
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Draft",
+      "isDeleted": false
+    },
+    "createdAt": "2026-07-13T10:04:46.387Z",
+    "updatedAt": "2026-07-13T10:04:46.387Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a54ba5deb4529b9f7e1f76a",
+    "general": {
+      "projectName": "hey2",
+      "builderName": "hey3",
+      "slug": "hey2",
+      "projectType": "Industrial",
+      "description": "dkjaf"
+    },
+    "contact": {
+      "phone": "",
+      "whatsapp": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "",
+      "pincode": "",
+      "googleMaps": ""
+    },
+    "media": {
+      "coverImage": null,
+      "gallery": []
+    },
+    "videos": [],
+    "brochure": {
+      "title": "",
+      "fileUrl": ""
+    },
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Draft",
+      "isDeleted": true
+    },
+    "createdAt": "2026-07-13T10:13:49.559Z",
+    "updatedAt": "2026-07-13T10:20:19.219Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a54ba80eb4529b9f7e1f782",
+    "general": {
+      "projectName": "adfadf",
+      "builderName": "dafd",
+      "slug": "adfadf",
+      "projectType": "Residential",
+      "description": "asdfd"
+    },
+    "contact": {
+      "phone": "",
+      "whatsapp": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "",
+      "pincode": "",
+      "googleMaps": ""
+    },
+    "media": {
+      "coverImage": null,
+      "gallery": []
+    },
+    "videos": [],
+    "brochure": {
+      "title": "",
+      "fileUrl": ""
+    },
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Draft",
+      "isDeleted": true
+    },
+    "createdAt": "2026-07-13T10:14:24.653Z",
+    "updatedAt": "2026-07-13T10:17:09.987Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a54bf2beb4529b9f7e1f7c4",
+    "general": {
+      "projectName": "skyshot",
+      "builderName": "abcd",
+      "slug": "skyshot",
+      "projectType": "Industrial",
+      "description": "jkjkj"
+    },
+    "contact": {
+      "phone": "",
+      "whatsapp": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "",
+      "pincode": "",
+      "googleMaps": ""
+    },
+    "media": {
+      "coverImage": null,
+      "gallery": []
+    },
+    "videos": [],
+    "brochure": {
+      "title": "",
+      "fileUrl": ""
+    },
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Draft",
+      "isDeleted": false
+    },
+    "createdAt": "2026-07-13T10:34:19.963Z",
+    "updatedAt": "2026-07-13T10:55:14.830Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a54c3b1eb4529b9f7e1f7f1",
+    "general": {
+      "projectName": "skyline",
+      "builderName": "abc",
+      "slug": "skyline",
+      "projectType": "Commercial",
+      "description": "hey this is a test of skyline"
+    },
+    "contact": {
+      "phone": "545789498",
+      "whatsapp": "7874815641",
+      "email": "hey@gmail.com",
+      "website": "https://360eye.in/gallery/portfolio/pramukhabc_portfolio_v2/index.html",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "PIPLOD,SURAT",
+      "city": "SURAT",
+      "state": "Gujarat",
+      "pincode": "395001",
+      "googleMaps": ""
+    },
+    "media": {
+      "coverImage": null,
+      "gallery": []
+    },
+    "videos": [],
+    "brochure": {
+      "title": "",
+      "fileUrl": ""
+    },
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": ""
+    },
+    "status": {
+      "featured": true,
+      "published": false,
+      "status": "Archived",
+      "isDeleted": false
+    },
+    "createdAt": "2026-07-13T10:53:37.939Z",
+    "updatedAt": "2026-07-13T10:53:37.939Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a54c53aeb4529b9f7e1f850",
+    "general": {
+      "projectName": "skylearn",
+      "builderName": "sns",
+      "slug": "skylearn",
+      "projectType": "Residential",
+      "description": "kajdfkj"
+    },
+    "contact": {
+      "phone": "",
+      "whatsapp": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "",
+      "pincode": "",
+      "googleMaps": ""
+    },
+    "media": {
+      "coverImage": null,
+      "gallery": []
+    },
+    "videos": [],
+    "brochure": {
+      "title": "",
+      "fileUrl": ""
+    },
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Published",
+      "isDeleted": true
+    },
+    "createdAt": "2026-07-13T11:00:10.961Z",
+    "updatedAt": "2026-07-13T12:27:49.020Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a55c4446f333623b8a6254d",
+    "general": {
+      "projectName": "kajf",
+      "builderName": "JKDFJK",
+      "slug": "kajf",
+      "projectType": "Commercial",
+      "description": "LKDAFKLD"
+    },
+    "contact": {
+      "phone": "",
+      "whatsapp": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "",
+      "pincode": "",
+      "googleMaps": ""
+    },
+    "media": {
+      "gallery": []
+    },
+    "videos": [],
+    "brochure": {
+      "title": "",
+      "fileUrl": ""
+    },
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Draft",
+      "isDeleted": false
+    },
+    "createdAt": "2026-07-14T05:08:20.656Z",
+    "updatedAt": "2026-07-14T05:08:20.656Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a55c59a6f333623b8a6255a",
+    "general": {
+      "projectName": "adf",
+      "builderName": "vhre",
+      "slug": "adf",
+      "projectType": "Mixed Use",
+      "description": "rtfgsdg"
+    },
+    "contact": {
+      "phone": "",
+      "whatsapp": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "",
+      "pincode": "",
+      "googleMaps": ""
+    },
+    "media": {
+      "gallery": []
+    },
+    "videos": [],
+    "brochure": {
+      "title": "",
+      "fileUrl": ""
+    },
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Draft",
+      "isDeleted": false
+    },
+    "createdAt": "2026-07-14T05:14:02.108Z",
+    "updatedAt": "2026-07-14T05:14:02.108Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a55c71d6f333623b8a62567",
+    "general": {
+      "projectName": "def building",
+      "builderName": "def group",
+      "slug": "def-building",
+      "projectType": "Residential",
+      "description": "this is def grp"
+    },
+    "contact": {
+      "phone": "",
+      "whatsapp": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "",
+      "pincode": "",
+      "googleMaps": ""
+    },
+    "media": {
+      "coverImage": {
+        "url": "/projects/6a55c71d6f333623b8a62567/cover/1784009307047-4a9aef596709.png",
+        "alt": ""
+      },
+      "gallery": []
+    },
+    "videos": [],
+    "brochure": {
+      "title": "",
+      "fileUrl": ""
+    },
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Draft",
+      "isDeleted": false
+    },
+    "createdAt": "2026-07-14T05:20:29.649Z",
+    "updatedAt": "2026-07-14T06:08:27.121Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a55c8726f333623b8a6256e",
+    "general": {
+      "projectName": "ghi",
+      "builderName": "ghi group",
+      "slug": "ghi",
+      "projectType": "Commercial",
+      "description": "ghi group from"
+    },
+    "contact": {
+      "phone": "",
+      "whatsapp": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "",
+      "pincode": "",
+      "googleMaps": ""
+    },
+    "media": {
+      "coverImage": {
+        "url": "/projects/6a55c8726f333623b8a6256e/cover/1784009277593-5717e13bb1e6.png",
+        "alt": ""
+      },
+      "gallery": []
+    },
+    "videos": [],
+    "brochure": {
+      "title": "",
+      "fileUrl": ""
+    },
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Draft",
+      "isDeleted": false
+    },
+    "createdAt": "2026-07-14T05:26:10.224Z",
+    "updatedAt": "2026-07-14T06:07:57.631Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a55cb5b6f333623b8a6257b",
+    "general": {
+      "projectName": "jkl",
+      "builderName": "jkl grp",
+      "slug": "jkl",
+      "projectType": "Industrial",
+      "description": "this is jkl grp working on thsi"
+    },
+    "contact": {
+      "phone": "",
+      "whatsapp": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "",
+      "pincode": "",
+      "googleMaps": ""
+    },
+    "media": {
+      "coverImage": {
+        "url": "/projects/6a55cb5b6f333623b8a6257b/cover/1784007515132-fd4aed4a574f.jpg",
+        "alt": ""
+      },
+      "gallery": []
+    },
+    "videos": [],
+    "brochure": {
+      "title": "",
+      "fileUrl": ""
+    },
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Draft",
+      "isDeleted": false
+    },
+    "createdAt": "2026-07-14T05:38:35.036Z",
+    "updatedAt": "2026-07-14T06:06:42.007Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a55ceceb8db582ea5e465ee",
+    "general": {
+      "projectName": "xyz",
+      "builderName": "xyz grp",
+      "slug": "xyz",
+      "projectType": "Mixed Use",
+      "description": "this is xyz grp working on xyz proj"
+    },
+    "contact": {
+      "phone": "",
+      "whatsapp": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "",
+      "pincode": "",
+      "googleMaps": ""
+    },
+    "media": {
+      "coverImage": {
+        "url": "/projects/6a55ceceb8db582ea5e465ee/cover/1784009254885-0118c044ad0c.jpeg",
+        "alt": ""
+      },
+      "gallery": []
+    },
+    "videos": [],
+    "brochure": {
+      "title": "",
+      "fileUrl": ""
+    },
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Draft",
+      "isDeleted": false
+    },
+    "createdAt": "2026-07-14T05:53:18.082Z",
+    "updatedAt": "2026-07-14T06:07:34.913Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a55d3f8b8db582ea5e4665e",
+    "general": {
+      "projectName": "pqr",
+      "builderName": "pqr grp",
+      "slug": "pqr",
+      "projectType": "Residential",
+      "description": "pqr building by pqr project"
+    },
+    "contact": {
+      "phone": "",
+      "whatsapp": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "",
+      "pincode": "",
+      "googleMaps": ""
+    },
+    "media": {
+      "coverImage": {
+        "url": "/projects/6a55d3f8b8db582ea5e4665e/cover/1784009720284-f076c2f8c4eb.jpg",
+        "alt": ""
+      },
+      "gallery": [
+        {
+          "displayOrder": 0
+        },
+        {
+          "displayOrder": 0
+        },
+        {
+          "displayOrder": 0
+        },
+        {
+          "displayOrder": 0
+        },
+        {
+          "displayOrder": 0
+        },
+        {
+          "displayOrder": 0
+        }
+      ]
+    },
+    "videos": [],
+    "brochure": {
+      "title": "",
+      "fileUrl": ""
+    },
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Draft",
+      "isDeleted": false
+    },
+    "createdAt": "2026-07-14T06:15:20.219Z",
+    "updatedAt": "2026-07-14T06:15:20.344Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a55d93833e2724013e5af5b",
+    "general": {
+      "projectName": "test11",
+      "builderName": "11 builders",
+      "slug": "test11",
+      "projectType": "Commercial",
+      "description": "hey this is 11 builders"
+    },
+    "contact": {
+      "phone": "",
+      "whatsapp": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "",
+      "pincode": "",
+      "googleMaps": ""
+    },
+    "media": {
+      "coverImage": {
+        "url": "/projects/6a55d93833e2724013e5af5b/cover/1784011065050-926bab2a4b14.jpg",
+        "alt": ""
+      },
+      "gallery": [
+        {
+          "url": "/projects/6a55d93833e2724013e5af5b/gallery/1784011065151-81731d300266.jpeg",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 2
+        },
+        {
+          "url": "/projects/6a55d93833e2724013e5af5b/gallery/1784011065141-4b8b59295bc9.jpeg",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 0
+        },
+        {
+          "url": "/projects/6a55d93833e2724013e5af5b/gallery/1784011065163-62ea5491666a.jpg",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 3
+        },
+        {
+          "url": "/projects/6a55d93833e2724013e5af5b/gallery/1784011065177-784e7ee176eb.jpg",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 5
+        },
+        {
+          "url": "/projects/6a55d93833e2724013e5af5b/gallery/1784011065397-98d7cb6f3b1c.jpeg",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 1
+        },
+        {
+          "url": "/projects/6a55d93833e2724013e5af5b/gallery/1784011065437-81ed9ea0c04e.jpeg",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 4
+        },
+        {
+          "url": "/projects/6a55d93833e2724013e5af5b/gallery/1784013971349-dbcc74aa2a16.jpeg",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 6
+        }
+      ]
+    },
+    "videos": [],
+    "brochure": {
+      "title": ""
+    },
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Draft",
+      "isDeleted": false
+    },
+    "createdAt": "2026-07-14T06:37:44.969Z",
+    "updatedAt": "2026-07-14T07:26:11.507Z",
+    "__v": 7
+  },
+  {
+    "_id": "6a560af2fb40ce0a2c131ea3",
+    "general": {
+      "projectName": "test12",
+      "builderName": "12 group",
+      "slug": "test12",
+      "projectType": "Mixed Use",
+      "description": "this is a group of 12 builders"
+    },
+    "contact": {
+      "phone": "+48945602",
+      "whatsapp": "+48945602",
+      "email": "heythisis@gmail.com",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "PIPLOD,SURAT",
+      "city": "SURAT",
+      "state": "Gujarat",
+      "pincode": "395001",
+      "googleMaps": ""
+    },
+    "media": {
+      "coverImage": {
+        "url": "/projects/6a560af2fb40ce0a2c131ea3/cover/1784023794407-1f8e1f3f8646.jpg",
+        "alt": ""
+      },
+      "gallery": [
+        {
+          "url": "/projects/6a560af2fb40ce0a2c131ea3/gallery/1784023794614-bc1ae9ad5a39.jpeg",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 0
+        },
+        {
+          "url": "/projects/6a560af2fb40ce0a2c131ea3/gallery/1784023794632-1c8dac402379.jpg",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 6
+        },
+        {
+          "url": "/projects/6a560af2fb40ce0a2c131ea3/gallery/1784023794609-a477c9c5b607.jpeg",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 5
+        },
+        {
+          "url": "/projects/6a560af2fb40ce0a2c131ea3/gallery/1784023794591-f7eb995c8107.jpeg",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 2
+        },
+        {
+          "url": "/projects/6a560af2fb40ce0a2c131ea3/gallery/1784023794884-d7458016fbb8.jpg",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 4
+        },
+        {
+          "url": "/projects/6a560af2fb40ce0a2c131ea3/gallery/1784023794778-f35a8d31f77f.jpeg",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 1
+        },
+        {
+          "url": "/projects/6a560af2fb40ce0a2c131ea3/gallery/1784023794911-ba49dff9f09f.jpeg",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 3
+        },
+        {
+          "url": "/projects/6a560af2fb40ce0a2c131ea3/gallery/1784023794940-eb8ea6490576.jpeg",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 7
+        }
+      ]
+    },
+    "videos": [],
+    "brochure": {
+      "title": ""
+    },
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": "",
+      "shareDescription": "CHECKOUT THIS TOUR OF TEST12 BUILDING."
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Published",
+      "isDeleted": false
+    },
+    "createdAt": "2026-07-14T10:09:54.263Z",
+    "updatedAt": "2026-07-14T10:09:55.410Z",
+    "__v": 8
+  },
+  {
+    "_id": "6a58d5a09b258ef680df440a",
+    "general": {
+      "projectName": "skyline resid",
+      "builderName": "13 builders",
+      "slug": "skyline-resid",
+      "projectType": "Residential",
+      "description": "this is a proj"
+    },
+    "projectCategory": "portfolio",
+    "parentProject": null,
+    "contact": {
+      "phone": "848974",
+      "whatsapp": "848974",
+      "email": "123@exampl.com",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "",
+      "pincode": "",
+      "googleMaps": ""
+    },
+    "media": {
+      "coverImage": {
+        "url": "/projects/6a58d5a09b258ef680df440a/cover/1784206753088-279f0eb019fb.jpg",
+        "alt": ""
+      },
+      "gallery": [
+        {
+          "url": "/projects/6a58d5a09b258ef680df440a/gallery/1784206753231-c6d9138f1d9b.jpeg",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 1
+        },
+        {
+          "url": "/projects/6a58d5a09b258ef680df440a/gallery/1784206753226-d22041133c1c.jpg",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 0
+        },
+        {
+          "url": "/projects/6a58d5a09b258ef680df440a/gallery/1784206753491-7c5c476668d8.jpeg",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 3
+        },
+        {
+          "url": "/projects/6a58d5a09b258ef680df440a/gallery/1784206753555-763fe4310eb1.jpeg",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 2
+        }
+      ]
+    },
+    "videos": [],
+    "brochure": {
+      "title": ""
+    },
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": "",
+      "shareDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Archived",
+      "isDeleted": false
+    },
+    "createdAt": "2026-07-16T12:59:12.999Z",
+    "updatedAt": "2026-07-16T12:59:13.679Z",
+    "__v": 4
+  },
+  {
+    "_id": "6a59ce9c22aa9039e743648f",
+    "general": {
+      "projectName": "pramukh abc grp",
+      "builderName": "pramukh bhai",
+      "slug": "pramukh-abc-grp",
+      "projectType": "Commercial",
+      "description": "this is a test portfolio tour"
+    },
+    "projectCategory": "portfolio",
+    "parentProject": null,
+    "contact": {
+      "phone": "",
+      "whatsapp": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "",
+      "pincode": "",
+      "googleMaps": ""
+    },
+    "media": {
+      "coverImage": {
+        "url": "/projects/6a59ce9c22aa9039e743648f/cover/1784270492095-a17fde07c360.jpg",
+        "alt": ""
+      },
+      "gallery": []
+    },
+    "videos": [],
+    "brochure": {
+      "title": ""
+    },
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": "",
+      "shareDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Archived",
+      "isDeleted": false
+    },
+    "createdAt": "2026-07-17T06:41:32.021Z",
+    "updatedAt": "2026-07-17T06:41:32.156Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a59cf3822aa9039e74364a1",
+    "general": {
+      "projectName": "indi_test_1",
+      "builderName": "abcd",
+      "slug": "inditest1",
+      "projectType": "Commercial",
+      "description": "this is the first test for individual proj adding to portfolio"
+    },
+    "projectCategory": "individual",
+    "parentProject": "6a59ce9c22aa9039e743648f",
+    "contact": {
+      "phone": "894545454545897489",
+      "whatsapp": "545897489",
+      "email": "hey@gmail.com",
+      "website": "https://360eye.in/gallery/portfolio/pramukhabc_portfolio_v2/index.html",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "PIPLOD,SURAT",
+      "city": "SURAT",
+      "state": "Gujarat",
+      "pincode": "395009",
+      "googleMaps": ""
+    },
+    "media": {
+      "coverImage": {
+        "url": "/projects/6a59cf3822aa9039e74364a1/cover/1784270648357-82c102a71ee8.png",
+        "alt": ""
+      },
+      "gallery": [
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270648486-341e31ad7428.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 0
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270648503-13cd41d1614e.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 5
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270648496-319547b30d8f.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 3
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270648517-af912b9473fb.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 6
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270648607-543df1a61d50.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 7
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270648612-f6ae92455ff5.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 8
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270648623-fb1ee9903ce7.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 1
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270648632-d27b2714dfbb.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 9
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270648718-41ec6b2daa8a.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 11
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270648740-0c5f66d339e9.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 12
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270648759-b266983c1faf.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 14
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270648790-9c24318c6a6c.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 2
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270648840-e7a5162a3175.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 13
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270648844-b0851c99ed19.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 15
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270648854-85f0bf5c3e61.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 16
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270648884-a50d580218ff.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 17
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270648726-566114d51707.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 4
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270648905-86c7418267a2.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 10
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270648922-ee08451a4c60.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 18
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270648947-a3da4b854edd.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 19
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270648990-234ebe50decf.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 20
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649014-76b140677a1a.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 21
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649097-cda65f1e2582.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 23
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649100-5c3384bc7d39.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 22
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649123-59b0e4e3a0b4.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 24
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649164-427640f308ba.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 25
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649172-6aac82c8c69a.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 26
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649189-dc1df2c44d6a.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 27
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649229-5df4e5a09cf9.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 29
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649258-fd6893f7e84c.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 30
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649279-76672aafe318.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 28
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649337-b4f945164ec3.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 33
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649340-ebd08d1d0b2c.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 32
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649335-6c1e2402386e.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 31
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649351-d2af991804c1.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 34
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649397-2cdc4038b9bc.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 36
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649390-b67f63d7f8d7.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 35
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649462-90cfb84752ae.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 39
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649457-298b95ce7059.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 37
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649460-501a594472ef.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 38
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649471-ba4a31de6525.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 40
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649516-0eccd1982157.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 41
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649549-ee942911628a.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 42
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649596-360d7ef9430f.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 43
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649617-080e8c3c4e98.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 45
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649612-3b8f067c5fe7.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 44
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649644-d12306baf540.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 46
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649682-040344389b76.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 48
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649723-2426ed25dd88.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 49
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649745-5a6be3ad0208.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 50
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649791-0a12ddee087d.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 47
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649788-ee7010403832.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 51
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649808-ebf999fc2bb6.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 52
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649837-bede36e0fb2f.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 53
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649862-73ed3d087b7c.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 54
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649889-e0260707d9a6.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 55
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649917-00e541a1b250.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 56
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649929-b26a45d8fd73.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 57
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649950-f5d4423dd547.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 58
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649978-d78a14853d97.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 59
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270649995-077d2068ac78.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 60
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270650057-c1541df7db66.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 62
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270650034-d6fa208cb4a5.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 61
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270650265-164bed1922a0.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 63
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270650261-dfc9b9f2e4d0.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 65
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270650270-9a3d62e8cd74.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 64
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270650395-1d7770af1026.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 66
+        },
+        {
+          "url": "/projects/6a59cf3822aa9039e74364a1/gallery/1784270650434-22410ec1abe8.png",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 67
+        }
+      ]
+    },
+    "videos": [],
+    "brochure": {
+      "title": ""
+    },
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": "",
+      "shareDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Published",
+      "isDeleted": false
+    },
+    "createdAt": "2026-07-17T06:44:08.287Z",
+    "updatedAt": "2026-07-17T06:44:10.519Z",
+    "__v": 68
+  },
+  {
+    "_id": "6a5a0f1824fac17a04d664b6",
+    "general": {
+      "projectName": "test15",
+      "builderName": "15 group",
+      "slug": "test15",
+      "projectType": "Residential",
+      "description": "test project"
+    },
+    "projectTag": "P0001",
+    "projectCategory": "individual",
+    "parentProject": null,
+    "contact": {
+      "phone": "8748574",
+      "whatsapp": "87489489456",
+      "email": "heythisis@gmail.com",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "PIPLOD,SURAT",
+      "city": "SURAT",
+      "state": "Gujarat",
+      "pincode": "",
+      "googleMaps": ""
+    },
+    "media": {
+      "coverImage": null,
+      "gallery": []
+    },
+    "videos": [
+      {
+        "title": "this is a test title",
+        "url": "https://drive.google.com/file/d/1Q0SmEOXLlpJA5vPql1tzBDjJx227yTaZ/view?usp=sharing",
+        "thumbnail": "",
+        "displayOrder": 1
+      }
+    ],
+    "brochures": [],
+    "legalDocuments": [],
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": "",
+      "shareDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Draft",
+      "isDeleted": false
+    },
+    "createdAt": "2026-07-17T11:16:40.673Z",
+    "updatedAt": "2026-07-17T11:16:40.673Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a5a1bdcc58d65b84f9425d3",
+    "general": {
+      "projectName": "asdfd",
+      "builderName": "adfad",
+      "slug": "asdfd",
+      "projectType": "Residential",
+      "description": "adfdf"
+    },
+    "projectTag": "P0002",
+    "projectCategory": "individual",
+    "parentProject": null,
+    "contact": {
+      "phone": "",
+      "whatsapp": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "",
+      "pincode": "",
+      "googleMaps": ""
+    },
+    "media": {
+      "coverImage": null,
+      "gallery": []
+    },
+    "videos": [],
+    "brochures": [
+      {
+        "title": "sales",
+        "createdAt": "2026-07-17T12:11:08.811Z",
+        "updatedAt": "2026-07-17T12:11:08.811Z"
+      }
+    ],
+    "legalDocuments": [
+      {
+        "title": "hehe",
+        "createdAt": "2026-07-17T12:11:08.811Z",
+        "updatedAt": "2026-07-17T12:11:08.811Z"
+      }
+    ],
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": "",
+      "shareDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Draft",
+      "isDeleted": false
+    },
+    "createdAt": "2026-07-17T12:11:08.811Z",
+    "updatedAt": "2026-07-17T12:11:08.811Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a5b27640cc7cc04756a532d",
+    "general": {
+      "projectName": "test18",
+      "builderName": "18 builders",
+      "slug": "test18",
+      "projectType": "Commercial",
+      "description": "18 builders are there"
+    },
+    "projectTag": "P0003",
+    "projectCategory": "individual",
+    "parentProject": null,
+    "contact": {
+      "phone": "7899456412",
+      "whatsapp": "7899456412",
+      "email": "123@example.com",
+      "website": "https://360eye.in/gallery/portfolio/pramukhabc_portfolio_v2/index.html",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "PIPLOD,SURAT",
+      "city": "SURAT",
+      "state": "Gujarat",
+      "pincode": "395009",
+      "googleMaps": ""
+    },
+    "media": {
+      "coverImage": {
+        "url": "/projects/6a5b27640cc7cc04756a532d/cover/1784358756147-629988621822.jpg",
+        "alt": ""
+      },
+      "gallery": [
+        {
+          "url": "/projects/6a5b27640cc7cc04756a532d/gallery/1784358756323-b36022bba71e.jpeg",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 7
+        },
+        {
+          "url": "/projects/6a5b27640cc7cc04756a532d/gallery/1784358756459-d2b55a3ceb08.jpeg",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 6
+        },
+        {
+          "url": "/projects/6a5b27640cc7cc04756a532d/gallery/1784358756284-2715af1b2c55.jpeg",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 2
+        },
+        {
+          "url": "/projects/6a5b27640cc7cc04756a532d/gallery/1784358756310-c2dc6fa0387f.jpeg",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 5
+        },
+        {
+          "url": "/projects/6a5b27640cc7cc04756a532d/gallery/1784358756287-4499da46ed5d.jpg",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 0
+        },
+        {
+          "url": "/projects/6a5b27640cc7cc04756a532d/gallery/1784358756610-45696b5bbcec.jpeg",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 8
+        },
+        {
+          "url": "/projects/6a5b27640cc7cc04756a532d/gallery/1784358756628-784bc1d9c814.jpeg",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 9
+        },
+        {
+          "url": "/projects/6a5b27640cc7cc04756a532d/gallery/1784358756588-852e8ab8b112.jpg",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 1
+        },
+        {
+          "url": "/projects/6a5b27640cc7cc04756a532d/gallery/1784358756666-14496bd4911d.jpeg",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 3
+        },
+        {
+          "url": "/projects/6a5b27640cc7cc04756a532d/gallery/1784358756668-340e6bf8f0d0.jpeg",
+          "alt": "",
+          "caption": "",
+          "displayOrder": 4
+        }
+      ]
+    },
+    "videos": [
+      {
+        "title": "proj walkthrough",
+        "url": "https://drive.google.com/file/d/1Q0SmEOXLlpJA5vPql1tzBDjJx227yTaZ/view?usp=drive_link",
+        "thumbnail": "",
+        "displayOrder": 2
+      }
+    ],
+    "brochures": [
+      {
+        "title": "The Rivium - Teaser Video - Script",
+        "url": "/projects/6a5b27640cc7cc04756a532d/brochures/1784358756982-50c5f220f367.pdf",
+        "createdAt": "2026-07-18T07:12:37.012Z",
+        "updatedAt": "2026-07-18T07:12:37.012Z"
+      },
+      {
+        "title": "pricing brochures",
+        "url": "/projects/6a5b27640cc7cc04756a532d/brochures/1784358756986-9b368e7ec02e.pdf",
+        "createdAt": "2026-07-18T07:12:37.036Z",
+        "updatedAt": "2026-07-18T07:12:37.036Z"
+      }
+    ],
+    "legalDocuments": [
+      {
+        "title": "360° Virtual Tour - Instruction (1)",
+        "url": "/projects/6a5b27640cc7cc04756a532d/legal/1784358757103-5103ecff225f.pdf",
+        "createdAt": "2026-07-18T07:12:37.140Z",
+        "updatedAt": "2026-07-18T07:12:37.140Z"
+      },
+      {
+        "title": "rera certi",
+        "url": "/projects/6a5b27640cc7cc04756a532d/legal/1784358757104-9afad75fbccd.pdf",
+        "createdAt": "2026-07-18T07:12:37.151Z",
+        "updatedAt": "2026-07-18T07:12:37.151Z"
+      }
+    ],
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": "",
+      "shareDescription": ""
+    },
+    "status": {
+      "featured": true,
+      "published": false,
+      "status": "Archived",
+      "isDeleted": false
+    },
+    "createdAt": "2026-07-18T07:12:36.051Z",
+    "updatedAt": "2026-07-18T07:12:37.151Z",
+    "__v": 14
+  },
+  {
+    "_id": "6a5e0b17782cd0e18072920e",
+    "general": {
+      "projectName": "Vatar Industries",
+      "builderName": "Balar Group",
+      "slug": "vatar-industries",
+      "projectType": "Commercial",
+      "description": "balar group at work"
+    },
+    "projectTag": "P0004",
+    "projectCategory": "individual",
+    "parentProject": null,
+    "contact": {
+      "phone": "916358793124",
+      "whatsapp": "916358793124",
+      "email": "info@balarbuilders.com",
+      "website": "https://balarbuilders.com/",
+      "facebook": "https://www.facebook.com/thebalarbuilders",
+      "instagram": "https://www.instagram.com/thebalarbuilders/",
+      "linkedin": "https://github.com/SleepyCatHey",
+      "youtube": "https://youtu.be/R---exaGMCg?si=MEFT993yKyIMI_g9"
+    },
+    "location": {
+      "address": "CBC, Station Char Rasta, opp. PWD Circuit House Station, Kanchan Nagar, Vapi East, Imran Nagar, Vapi, Gujarat 396191",
+      "city": "Surat",
+      "state": "Gujarat",
+      "pincode": "396191",
+      "googleMaps": ""
+    },
+    "media": {
+      "coverImage": {
+        "url": "/projects/6a5e0b17782cd0e18072920e/cover/1784548119934-675cbb6b42ca.jpg",
+        "alt": ""
+      },
+      "gallery": [
+        {
+          "albumName": "Shayamal Iconic",
+          "displayOrder": 0,
+          "images": [
+            {
+              "url": "/projects/6a5e0b17782cd0e18072920e/gallery/1784548120049-9a3855175410.jpg",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 0
+            },
+            {
+              "url": "/projects/6a5e0b17782cd0e18072920e/gallery/1784548120314-0cbb66c886cb.jpg",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 4
+            }
+          ]
+        },
+        {
+          "albumName": "Shayamal Iconic",
+          "displayOrder": 0,
+          "images": [
+            {
+              "url": "/projects/6a5e0b17782cd0e18072920e/gallery/1784548120045-d028ae1248bd.jpg",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 2
+            }
+          ]
+        },
+        {
+          "albumName": "Shayamal Iconic",
+          "displayOrder": 0,
+          "images": [
+            {
+              "url": "/projects/6a5e0b17782cd0e18072920e/gallery/1784548120063-89cdf645e992.jpg",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 5
+            }
+          ]
+        },
+        {
+          "albumName": "Shayamal Iconic",
+          "displayOrder": 0,
+          "images": [
+            {
+              "url": "/projects/6a5e0b17782cd0e18072920e/gallery/1784548120068-d37350914711.jpg",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 1
+            }
+          ]
+        }
+      ]
+    },
+    "videos": [
+      {
+        "title": "demo",
+        "url": "https://drive.google.com/file/d/1Q0SmEOXLlpJA5vPql1tzBDjJx227yTaZ/view?usp=sharing",
+        "thumbnail": "",
+        "displayOrder": 1
+      }
+    ],
+    "brochures": [],
+    "legalDocuments": [],
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "Luxury building in surat",
+      "metaDescription": "Flats in vesu",
+      "shareDescription": "Hey, check out this luxurious building by Balar group built by 360eye."
+    },
+    "status": {
+      "featured": true,
+      "published": false,
+      "status": "Published",
+      "isDeleted": false
+    },
+    "createdAt": "2026-07-20T11:48:39.846Z",
+    "updatedAt": "2026-07-20T11:48:40.365Z",
+    "__v": 5
+  },
+  {
+    "_id": "6a5e0b34782cd0e18072922a",
+    "general": {
+      "projectName": "Vatar Industries",
+      "builderName": "Balar Group",
+      "slug": "vatar-industriess",
+      "projectType": "Commercial",
+      "description": "balar group at work"
+    },
+    "projectTag": "P0005",
+    "projectCategory": "individual",
+    "parentProject": null,
+    "contact": {
+      "phone": "916358793124",
+      "whatsapp": "916358793124",
+      "email": "info@balarbuilders.com",
+      "website": "https://balarbuilders.com/",
+      "facebook": "https://www.facebook.com/thebalarbuilders",
+      "instagram": "https://www.instagram.com/thebalarbuilders/",
+      "linkedin": "https://github.com/SleepyCatHey",
+      "youtube": "https://youtu.be/R---exaGMCg?si=MEFT993yKyIMI_g9"
+    },
+    "location": {
+      "address": "CBC, Station Char Rasta, opp. PWD Circuit House Station, Kanchan Nagar, Vapi East, Imran Nagar, Vapi, Gujarat 396191",
+      "city": "Surat",
+      "state": "Gujarat",
+      "pincode": "396191",
+      "googleMaps": ""
+    },
+    "media": {
+      "coverImage": {
+        "url": "/projects/6a5e0b34782cd0e18072922a/cover/1784548148542-903a9c4ccf6f.jpg",
+        "alt": ""
+      },
+      "gallery": [
+        {
+          "albumName": "Shayamal Iconic",
+          "displayOrder": 0,
+          "images": [
+            {
+              "url": "/projects/6a5e0b34782cd0e18072922a/gallery/1784548148630-cddea683a837.jpg",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 2
+            },
+            {
+              "url": "/projects/6a5e0b34782cd0e18072922a/gallery/1784548148778-32a4b326c806.jpg",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 5
+            },
+            {
+              "url": "/projects/6a5e0b34782cd0e18072922a/gallery/1784548148798-758ea5994c6d.jpg",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 1
+            }
+          ]
+        },
+        {
+          "albumName": "Shayamal Iconic",
+          "displayOrder": 0,
+          "images": [
+            {
+              "url": "/projects/6a5e0b34782cd0e18072922a/gallery/1784548148626-ccee8468c070.jpg",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 0
+            }
+          ]
+        },
+        {
+          "albumName": "Shayamal Iconic",
+          "displayOrder": 0,
+          "images": [
+            {
+              "url": "/projects/6a5e0b34782cd0e18072922a/gallery/1784548148635-169344206dd5.jpg",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 4
+            }
+          ]
+        },
+        {
+          "albumName": "Shayamal Iconic",
+          "displayOrder": 0,
+          "images": [
+            {
+              "url": "/projects/6a5e0b34782cd0e18072922a/gallery/1784548148638-f377067b83dd.jpg",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 3
+            }
+          ]
+        }
+      ]
+    },
+    "videos": [
+      {
+        "title": "demo",
+        "url": "https://drive.google.com/file/d/1Q0SmEOXLlpJA5vPql1tzBDjJx227yTaZ/view?usp=sharing",
+        "thumbnail": "",
+        "displayOrder": 1
+      }
+    ],
+    "brochures": [
+      {
+        "title": "Vatar Industrial Park Brochure_en",
+        "url": "/projects/6a5e0b34782cd0e18072922a/brochures/1784548148907-0fc3b1c8e003.pdf",
+        "createdAt": "2026-07-20T11:49:08.945Z",
+        "updatedAt": "2026-07-20T11:49:08.945Z"
+      }
+    ],
+    "legalDocuments": [
+      {
+        "title": "Vatar industrial park RERA certificate_en",
+        "url": "/projects/6a5e0b34782cd0e18072922a/legal/1784548148999-07f87d1ebb0e.pdf",
+        "createdAt": "2026-07-20T11:49:09.026Z",
+        "updatedAt": "2026-07-20T11:49:09.026Z"
+      }
+    ],
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "Luxury building in surat",
+      "metaDescription": "Flats in vesu",
+      "shareDescription": "Hey, check out this luxurious building by Balar group built by 360eye."
+    },
+    "status": {
+      "featured": true,
+      "published": false,
+      "status": "Published",
+      "isDeleted": false
+    },
+    "createdAt": "2026-07-20T11:49:08.488Z",
+    "updatedAt": "2026-07-20T11:49:09.027Z",
+    "__v": 8
+  },
+  {
+    "_id": "6a609b4d3f24cb28b4eeca53",
+    "general": {
+      "projectName": "sjd",
+      "builderName": "AJDFKAJ",
+      "slug": "sjd",
+      "projectType": "Commercial",
+      "description": "ADJKFLAJDKF"
+    },
+    "projectTag": "P0006",
+    "projectCategory": "individual",
+    "parentProject": null,
+    "contact": {
+      "phone": "",
+      "whatsapp": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "",
+      "pincode": "",
+      "googleMaps": ""
+    },
+    "filters": {
+      "city": "surat",
+      "area": "nanpura",
+      "propertyType": "residential",
+      "amenities": [],
+      "tags": []
+    },
+    "media": {
+      "coverImage": null,
+      "gallery": []
+    },
+    "videos": [],
+    "brochures": [],
+    "legalDocuments": [],
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": "",
+      "shareDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Draft",
+      "isDeleted": false
+    },
+    "createdAt": "2026-07-22T10:28:29.811Z",
+    "updatedAt": "2026-07-22T10:28:29.811Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a648aa80870be09902c89d0",
+    "general": {
+      "projectName": "first",
+      "builderName": "abcd",
+      "slug": "first",
+      "projectType": "Residential",
+      "description": "this is the first testing with floorplan"
+    },
+    "projectTag": "P0007",
+    "projectCategory": "individual",
+    "parentProject": null,
+    "contact": {
+      "phone": "",
+      "whatsapp": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "",
+      "pincode": "",
+      "googleMaps": ""
+    },
+    "specifications": [],
+    "filters": {
+      "city": "",
+      "area": "",
+      "propertyType": "",
+      "amenities": [],
+      "tags": []
+    },
+    "media": {
+      "coverImage": null,
+      "gallery": []
+    },
+    "videos": [],
+    "brochures": [],
+    "legalDocuments": [],
+    "floorPlans": [
+      {
+        "title": "hey",
+        "originalPdf": "uploads\\floorplans\\6a648aa80870be09902c89d0\\14749a7f-e4ae-4c13-8dfa-f7b7789d3620\\original.pdf",
+        "thumbnail": "uploads\\floorplans\\6a648aa80870be09902c89d0\\14749a7f-e4ae-4c13-8dfa-f7b7789d3620\\thumbnail.png",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "dziPath": "uploads\\floorplans\\6a648aa80870be09902c89d0\\14749a7f-e4ae-4c13-8dfa-f7b7789d3620\\page_001.dzi"
+          },
+          {
+            "pageNumber": 2,
+            "dziPath": "uploads\\floorplans\\6a648aa80870be09902c89d0\\14749a7f-e4ae-4c13-8dfa-f7b7789d3620\\page_002.dzi"
+          },
+          {
+            "pageNumber": 3,
+            "dziPath": "uploads\\floorplans\\6a648aa80870be09902c89d0\\14749a7f-e4ae-4c13-8dfa-f7b7789d3620\\page_003.dzi"
+          },
+          {
+            "pageNumber": 4,
+            "dziPath": "uploads\\floorplans\\6a648aa80870be09902c89d0\\14749a7f-e4ae-4c13-8dfa-f7b7789d3620\\page_004.dzi"
+          }
+        ],
+        "displayOrder": 0,
+        "_id": "6a648acb0870be09902c89ec"
+      }
+    ],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": "",
+      "shareDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Draft",
+      "isDeleted": false
+    },
+    "createdAt": "2026-07-25T10:06:32.428Z",
+    "updatedAt": "2026-07-25T10:07:07.539Z",
+    "__v": 1
+  },
+  {
+    "_id": "6a648b0b0870be09902c89fe",
+    "general": {
+      "projectName": "first-1",
+      "builderName": "abcd",
+      "slug": "first-1",
+      "projectType": "Commercial",
+      "description": "this is the first with floorplan"
+    },
+    "projectTag": "P0008",
+    "projectCategory": "individual",
+    "parentProject": null,
+    "contact": {
+      "phone": "",
+      "whatsapp": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "",
+      "pincode": "",
+      "googleMaps": ""
+    },
+    "specifications": [],
+    "filters": {
+      "city": "",
+      "area": "",
+      "propertyType": "",
+      "amenities": [],
+      "tags": []
+    },
+    "media": {
+      "coverImage": null,
+      "gallery": []
+    },
+    "videos": [],
+    "brochures": [],
+    "legalDocuments": [],
+    "floorPlans": [
+      {
+        "title": "royal ethicks",
+        "originalPdf": "uploads\\floorplans\\6a648b0b0870be09902c89fe\\00f8f55b-09df-4f11-8308-f53a041ad195\\original.pdf",
+        "thumbnail": "uploads\\floorplans\\6a648b0b0870be09902c89fe\\00f8f55b-09df-4f11-8308-f53a041ad195\\thumbnail.png",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "dziPath": "uploads\\floorplans\\6a648b0b0870be09902c89fe\\00f8f55b-09df-4f11-8308-f53a041ad195\\page_001.dzi"
+          },
+          {
+            "pageNumber": 2,
+            "dziPath": "uploads\\floorplans\\6a648b0b0870be09902c89fe\\00f8f55b-09df-4f11-8308-f53a041ad195\\page_002.dzi"
+          },
+          {
+            "pageNumber": 3,
+            "dziPath": "uploads\\floorplans\\6a648b0b0870be09902c89fe\\00f8f55b-09df-4f11-8308-f53a041ad195\\page_003.dzi"
+          },
+          {
+            "pageNumber": 4,
+            "dziPath": "uploads\\floorplans\\6a648b0b0870be09902c89fe\\00f8f55b-09df-4f11-8308-f53a041ad195\\page_004.dzi"
+          }
+        ],
+        "displayOrder": 0,
+        "_id": "6a648b1f0870be09902c8a02"
+      }
+    ],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": "",
+      "shareDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Draft",
+      "isDeleted": false
+    },
+    "createdAt": "2026-07-25T10:08:11.310Z",
+    "updatedAt": "2026-07-25T10:08:31.712Z",
+    "__v": 1
+  },
+  {
+    "_id": "6a649c02ae14bbc5c2d6db5d",
+    "general": {
+      "projectName": "adfds",
+      "builderName": "dasfdfad",
+      "slug": "adfds",
+      "projectType": "Commercial",
+      "description": "adfd"
+    },
+    "projectTag": "P0009",
+    "projectCategory": "individual",
+    "parentProject": null,
+    "contact": {
+      "phone": "",
+      "whatsapp": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "",
+      "pincode": "",
+      "googleMaps": ""
+    },
+    "specifications": [
+      {
+        "primaryTitle": "gruound",
+        "items": []
+      }
+    ],
+    "filters": {
+      "city": "surat",
+      "area": "nanpura",
+      "propertyType": "residential",
+      "amenities": [
+        "luxury"
+      ],
+      "tags": [
+        "nice"
+      ]
+    },
+    "media": {
+      "coverImage": {
+        "url": "/projects/6a649c02ae14bbc5c2d6db5d/cover/1784978434416-e98d838b6e25.jpeg",
+        "alt": ""
+      },
+      "gallery": [
+        {
+          "albumName": "test",
+          "displayOrder": 0,
+          "images": [
+            {
+              "url": "/projects/6a649c02ae14bbc5c2d6db5d/gallery/1784978434602-e3d5b0a012d3.jpeg",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 0
+            }
+          ]
+        },
+        {
+          "albumName": "test",
+          "displayOrder": 0,
+          "images": [
+            {
+              "url": "/projects/6a649c02ae14bbc5c2d6db5d/gallery/1784978434619-42b6d3c833e4.jpeg",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 6
+            }
+          ]
+        },
+        {
+          "albumName": "test",
+          "displayOrder": 0,
+          "images": [
+            {
+              "url": "/projects/6a649c02ae14bbc5c2d6db5d/gallery/1784978434614-11da4a88a6cb.jpeg",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 4
+            }
+          ]
+        }
+      ]
+    },
+    "videos": [],
+    "brochures": [],
+    "legalDocuments": [],
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": "",
+      "shareDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Published",
+      "isDeleted": false
+    },
+    "createdAt": "2026-07-25T11:20:34.133Z",
+    "updatedAt": "2026-07-25T11:20:34.727Z",
+    "__v": 3
+  },
+  {
+    "_id": "6a649c202b85eee9260b4a12",
+    "general": {
+      "projectName": "adfds",
+      "builderName": "dasfdfad",
+      "slug": "adfds-2",
+      "projectType": "Commercial",
+      "description": "adfd"
+    },
+    "projectTag": "P0010",
+    "projectCategory": "individual",
+    "parentProject": null,
+    "contact": {
+      "phone": "",
+      "whatsapp": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "",
+      "pincode": "",
+      "googleMaps": ""
+    },
+    "specifications": [
+      {
+        "primaryTitle": "gruound",
+        "items": []
+      }
+    ],
+    "filters": {
+      "city": "surat",
+      "area": "nanpura",
+      "propertyType": "residential",
+      "amenities": [
+        "luxury"
+      ],
+      "tags": [
+        "nice"
+      ]
+    },
+    "media": {
+      "coverImage": {
+        "url": "/projects/6a649c202b85eee9260b4a12/cover/1784978464426-6d87bca59dda.jpeg",
+        "alt": ""
+      },
+      "gallery": [
+        {
+          "albumName": "test",
+          "displayOrder": 0,
+          "images": [
+            {
+              "url": "/projects/6a649c202b85eee9260b4a12/gallery/1784978467054-e5346457d8d0.jpeg",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 12
+            },
+            {
+              "url": "/projects/6a649c202b85eee9260b4a12/gallery/1784978467251-3d81c164a050.jpeg",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 7
+            },
+            {
+              "url": "/projects/6a649c202b85eee9260b4a12/gallery/1784978467271-e7edf3fd2174.jpeg",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 2
+            },
+            {
+              "url": "/projects/6a649c202b85eee9260b4a12/gallery/1784978467725-71ff906cfc0e.jpeg",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 0
+            }
+          ]
+        },
+        {
+          "albumName": "test",
+          "displayOrder": 0,
+          "images": [
+            {
+              "url": "/projects/6a649c202b85eee9260b4a12/gallery/1784978467043-f232e9a3fc89.jpeg",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 8
+            }
+          ]
+        }
+      ]
+    },
+    "videos": [],
+    "brochures": [],
+    "legalDocuments": [],
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": "",
+      "shareDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Published",
+      "isDeleted": false
+    },
+    "createdAt": "2026-07-25T11:21:04.136Z",
+    "updatedAt": "2026-07-25T11:21:07.828Z",
+    "__v": 5
+  }
+]
