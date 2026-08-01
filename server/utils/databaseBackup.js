@@ -1,26 +1,20 @@
-import fs from "node:fs/promises";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
+import fs from "fs/promises";
+import path from "path";
+import Project from "../models/Project.js";
 
-import Project from "../models/project.js";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-const BACKUP_DIR = path.join(__dirname, "..", "Local-Backup");
+const BACKUP_DIR = path.join(process.cwd(), "Local-Backup");
 const BACKUP_FILE = path.join(BACKUP_DIR, "projects.json");
 
+/**
+ * Backs up all non-deleted projects to a local JSON file.
+ */
 export const backupProjects = async () => {
   try {
-    const projects = await Project.find().lean();
-
     await fs.mkdir(BACKUP_DIR, { recursive: true });
-
-    await fs.writeFile(BACKUP_FILE, JSON.stringify(projects, null, 2), "utf8");
-
-    console.log(`✅ Local backup updated (${projects.length} projects)`);
+    const projects = await Project.find({ "status.isDeleted": { $ne: true } }).lean();
+    await fs.writeFile(BACKUP_FILE, JSON.stringify(projects, null, 2));
+    console.log(`Successfully backed up ${projects.length} projects to ${BACKUP_FILE}`);
   } catch (error) {
-    console.error("❌ Failed to create local backup");
-    console.error(error);
+    console.error("Error creating local project backup:", error);
   }
 };
