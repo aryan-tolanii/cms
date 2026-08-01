@@ -42,6 +42,11 @@ app.use(
         return callback(null, true);
       }
 
+      // Allow any localhost port in development to prevent issues when Vite switches ports (e.g., 5174)
+      if (origin.startsWith("http://localhost:")) {
+        return callback(null, true);
+      }
+
       return callback(new Error(`CORS blocked for origin: ${origin}`));
     },
     credentials: true,

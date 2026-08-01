@@ -91,6 +91,7 @@ export const syncProjectFilters = async (project) => {
         propertyType,
         amenity: amenities,
         tag: tags,
+        projectType: project.general?.projectType,
     };
 
     for (const [type, values] of Object.entries(filterMap)) {

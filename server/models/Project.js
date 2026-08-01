@@ -169,7 +169,6 @@ const generalSchema = new Schema(
     },
     projectType: {
       type: String,
-      enum: ["Residential", "Commercial", "Industrial", "Mixed Use"],
     },
     tagline: {
       type: String,

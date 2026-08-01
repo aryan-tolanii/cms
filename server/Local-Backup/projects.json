@@ -2818,5 +2818,311 @@
     "createdAt": "2026-08-01T11:06:15.585Z",
     "updatedAt": "2026-08-01T11:06:24.708Z",
     "__v": 5
+  },
+  {
+    "_id": "6a6dd760487cce6b350630ff",
+    "general": {
+      "projectName": "Sangini Skyteria",
+      "builderName": "Sangini",
+      "slug": "sangini-skyteria",
+      "projectType": "Residential",
+      "description": ""
+    },
+    "projectTag": "P0021",
+    "projectCategory": "individual",
+    "parentProject": null,
+    "contact": {
+      "phone": "9909926355",
+      "whatsapp": "9909926355",
+      "email": "marketing@sanginigroup.com",
+      "website": "https://www.sanginigroup.com/residential_projects/sangini_skyteria",
+      "facebook": "https://www.facebook.com/SanginiGroup/",
+      "instagram": "https://www.instagram.com/sanginigroupsurat/",
+      "linkedin": "",
+      "youtube": "https://www.youtube.com/user/sanginigroupsurat"
+    },
+    "location": {
+      "address": "Near Money Arcade, Opp. Sangini Arise, Besides Milap Residency, Off Vesu-Canal Road, Vesu, Surat-395007, Gujarat, India.",
+      "city": "surat",
+      "state": "Gujarat",
+      "pincode": "395007",
+      "googleMaps": ""
+    },
+    "specifications": [],
+    "filters": {
+      "city": "surat",
+      "area": "Vesu",
+      "propertyType": "residential",
+      "amenities": [
+        "luxury"
+      ],
+      "tags": [
+        "nice"
+      ]
+    },
+    "media": {
+      "coverImage": {
+        "url": "/projects/6a6dd760487cce6b350630ff/cover/1785583621794-f02d9457da1e",
+        "alt": ""
+      },
+      "gallery": [
+        {
+          "albumName": "Exterior",
+          "displayOrder": 0,
+          "images": [
+            {
+              "url": "/projects/6a6dd760487cce6b350630ff/gallery/1785583459383-2c7eb7300058",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 4
+            },
+            {
+              "url": "/projects/6a6dd760487cce6b350630ff/gallery/1785583460015-4686e01d1cec",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 0
+            },
+            {
+              "url": "/projects/6a6dd760487cce6b350630ff/gallery/1785583461039-1d819cdebc8c",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 3
+            },
+            {
+              "url": "/projects/6a6dd760487cce6b350630ff/gallery/1785583459480-3239130a49fd",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 1
+            }
+          ]
+        },
+        {
+          "albumName": "Exterior",
+          "displayOrder": 0,
+          "images": [
+            {
+              "url": "/projects/6a6dd760487cce6b350630ff/gallery/1785583459332-e9bee5c9f776",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 2
+            }
+          ]
+        }
+      ]
+    },
+    "videos": [],
+    "brochures": [
+      {
+        "title": "Sangini Skyteria (Brochure) (1)_compressed",
+        "url": "/projects/6a6dd760487cce6b350630ff/brochures/1785583462544-8d0fd332ef7a.pdf",
+        "createdAt": "2026-08-01T11:24:23.821Z",
+        "updatedAt": "2026-08-01T11:26:59.009Z"
+      }
+    ],
+    "legalDocuments": [
+      {
+        "title": "skyteria_rera_certificate (1)",
+        "url": "/projects/6a6dd760487cce6b350630ff/legal/1785583464840-fb9d9bad6a7a.pdf",
+        "createdAt": "2026-08-01T11:24:25.576Z",
+        "updatedAt": "2026-08-01T11:26:59.009Z"
+      }
+    ],
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": "",
+      "shareDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Draft",
+      "isDeleted": false
+    },
+    "createdAt": "2026-08-01T11:24:16.080Z",
+    "updatedAt": "2026-08-01T11:27:03.135Z",
+    "__v": 7
+  },
+  {
+    "_id": "6a6dd98b487cce6b3506314c",
+    "general": {
+      "projectName": "Sangini Edge",
+      "builderName": "Sangini",
+      "slug": "sangini-edgee",
+      "projectType": "Commercial",
+      "description": "Introducing Sangini Edge Surrounded by affluent residential neighborhoods with high-income residents. Well-connected to major transportation hubs such as the airport, railway station, and highways. Abundance of high-end retail shops, restaurants, cafes, and entertainment venues, attracting a discerning clientele, especially on weekends. Established hub for corporate offices across diverse sectors, fostering a vibrant business ecosystem. Proximity to esteemed educational institutions. Easy access to major industrial areas across the city, catering to textile, diamond and manufacturing. The location offers convenience, prestige, and ample opportunities for businesses to thrive.Right opposite BRTS station for easy commune of employees."
+    },
+    "projectTag": "P0022",
+    "projectCategory": "individual",
+    "parentProject": null,
+    "contact": {
+      "phone": "9909926355",
+      "whatsapp": "9909926355",
+      "email": "marketing@sanginigroup.com",
+      "website": "https://www.sanginigroup.com/commercial_projects/sangini_edge",
+      "facebook": "https://www.facebook.com/SanginiGroup/",
+      "instagram": "https://www.instagram.com/sanginigroupsurat/",
+      "linkedin": "",
+      "youtube": "https://www.youtube.com/user/sanginigroupsurat"
+    },
+    "location": {
+      "address": "Sangini Edge, Near Shantiniketan, Vesu Main Road, Udhna Magdalla Cross Road, Vesu, Surat-395007, Gujarat, India.",
+      "city": "surat",
+      "state": "Gujarat",
+      "pincode": "395007",
+      "googleMaps": ""
+    },
+    "specifications": [
+      {
+        "primaryTitle": "Unit specification:",
+        "items": [
+          {
+            "title": "Floor Finish",
+            "description": "Good Quality Vitrified Tiles in Flooring"
+          },
+          {
+            "title": "Deck / Open Terrace",
+            "description": "Anti -Skid Tiles on Floor"
+          }
+        ]
+      }
+    ],
+    "filters": {
+      "city": "surat",
+      "area": "Vesu",
+      "propertyType": "Commercial",
+      "amenities": [
+        "luxury"
+      ],
+      "tags": [
+        "fantastic"
+      ]
+    },
+    "media": {
+      "coverImage": {
+        "url": "/projects/6a6dd98b487cce6b3506314c/cover/1785584015293-7507cb7dc507",
+        "alt": ""
+      },
+      "gallery": [
+        {
+          "albumName": "Edge",
+          "displayOrder": 0,
+          "images": [
+            {
+              "url": "/projects/6a6dd98b487cce6b3506314c/gallery/1785584016809-77186f7a9643",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 5
+            },
+            {
+              "url": "/projects/6a6dd98b487cce6b3506314c/gallery/1785584017530-106d06ef8e47",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 1
+            },
+            {
+              "url": "/projects/6a6dd98b487cce6b3506314c/gallery/1785584017397-dcf7e27d68cf",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 4
+            },
+            {
+              "url": "/projects/6a6dd98b487cce6b3506314c/gallery/1785584017901-e3ae1706bfcd",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 2
+            },
+            {
+              "url": "/projects/6a6dd98b487cce6b3506314c/gallery/1785584017612-c9bfb86b70cb",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 3
+            }
+          ]
+        }
+      ]
+    },
+    "videos": [],
+    "brochures": [],
+    "legalDocuments": [],
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": "",
+      "shareDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Draft",
+      "isDeleted": false
+    },
+    "createdAt": "2026-08-01T11:33:31.558Z",
+    "updatedAt": "2026-08-01T11:33:40.286Z",
+    "__v": 5
+  },
+  {
+    "_id": "6a6ddaa52c633fa9063ec113",
+    "general": {
+      "projectName": "afad",
+      "builderName": "afad",
+      "slug": "afad",
+      "projectType": "Commercial",
+      "tagline": "asdfsad",
+      "description": "asfasf"
+    },
+    "projectTag": "P0023",
+    "projectCategory": "portfolio",
+    "parentProject": null,
+    "contact": {
+      "phone": "874541646",
+      "whatsapp": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "asf322rfe",
+      "city": "",
+      "state": "",
+      "pincode": "",
+      "googleMaps": ""
+    },
+    "specifications": [],
+    "filters": {
+      "city": "",
+      "area": "",
+      "propertyType": "",
+      "amenities": [],
+      "tags": []
+    },
+    "media": {
+      "coverImage": {
+        "url": "/projects/6a6ddaa52c633fa9063ec113/cover/1785584311716-6c36bd5137e2",
+        "alt": ""
+      },
+      "gallery": []
+    },
+    "videos": [],
+    "brochures": [],
+    "legalDocuments": [],
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": "",
+      "shareDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Draft",
+      "isDeleted": false
+    },
+    "createdAt": "2026-08-01T11:38:13.449Z",
+    "updatedAt": "2026-08-01T11:38:32.130Z",
+    "__v": 0
   }
 ]
