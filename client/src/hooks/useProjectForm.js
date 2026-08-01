@@ -8,6 +8,7 @@ const useProjectForm = () => {
         builderName: "",
         projectType: "",
         slug: "",
+        tagline: "",
         description: "",
       },
 

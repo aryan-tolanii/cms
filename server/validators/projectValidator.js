@@ -74,6 +74,12 @@ const generalValidation = (isCreate) => {
         `Project type must be one of: ${PROJECT_TYPES.join(", ")}`
       ),
 
+    body("general.tagline")
+      .optional({ values: "falsy" })
+      .isString()
+      .withMessage("Tagline must be a string")
+      .trim(),
+
     body("general.description")
       .optional({ values: "falsy" })
       .isString()

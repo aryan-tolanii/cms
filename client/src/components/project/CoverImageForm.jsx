@@ -13,6 +13,7 @@ const MediaInformationForm = ({
   showGallery = true,
   showBrochures = true,
   showLegalDocuments = true,
+  showFloorPlans = true,
 }) => {
   const { control } = useFormContext();
 
@@ -56,14 +57,16 @@ const MediaInformationForm = ({
         )}
 
         {/* Floor Plans */}
-        <Controller
-          name="floorPlans"
-          control={control}
-          defaultValue={[]}
-          render={({ field }) => (
-            <FloorPlanUpload value={field.value} onChange={field.onChange} />
-          )}
-        />
+        {showFloorPlans && (
+          <Controller
+            name="floorPlans"
+            control={control}
+            defaultValue={[]}
+            render={({ field }) => (
+              <FloorPlanUpload value={field.value} onChange={field.onChange} />
+            )}
+          />
+        )}
 
         {/* Legal Documents */}
         {showLegalDocuments && (

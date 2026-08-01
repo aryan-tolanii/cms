@@ -171,6 +171,10 @@ const generalSchema = new Schema(
       type: String,
       enum: ["Residential", "Commercial", "Industrial", "Mixed Use"],
     },
+    tagline: {
+      type: String,
+      trim: true,
+    },
     description: {
       type: String,
       trim: true,

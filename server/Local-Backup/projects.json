@@ -2507,5 +2507,318 @@
     "createdAt": "2026-07-25T11:21:04.136Z",
     "updatedAt": "2026-07-25T11:21:07.828Z",
     "__v": 5
+  },
+  {
+    "_id": "6a6da12de358218c5fcf0530",
+    "general": {
+      "projectName": "asjfkdjaif",
+      "builderName": "JADKJK",
+      "slug": "asjfkdjaif",
+      "projectType": "Commercial",
+      "description": "ADFDSFASD"
+    },
+    "projectTag": "P0011",
+    "projectCategory": "individual",
+    "parentProject": null,
+    "contact": {
+      "phone": "",
+      "whatsapp": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "",
+      "pincode": "",
+      "googleMaps": ""
+    },
+    "specifications": [],
+    "filters": {
+      "city": "",
+      "area": "",
+      "propertyType": "",
+      "amenities": [],
+      "tags": []
+    },
+    "media": {
+      "coverImage": null,
+      "gallery": []
+    },
+    "videos": [],
+    "brochures": [],
+    "legalDocuments": [],
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": "",
+      "shareDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Draft",
+      "isDeleted": false
+    },
+    "createdAt": "2026-08-01T07:33:01.219Z",
+    "updatedAt": "2026-08-01T07:33:01.219Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a6dad81f8285c8c02c7603e",
+    "general": {
+      "projectName": "dajfdjq",
+      "builderName": "dajfdjq",
+      "slug": "dajfdjq",
+      "projectType": "Commercial",
+      "tagline": "jdsklafk",
+      "description": "jkdjkfaj"
+    },
+    "projectTag": "P0012",
+    "projectCategory": "portfolio",
+    "parentProject": null,
+    "contact": {
+      "phone": "",
+      "whatsapp": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "kjaksdfk",
+      "city": "",
+      "state": "",
+      "pincode": "",
+      "googleMaps": ""
+    },
+    "specifications": [],
+    "filters": {
+      "city": "",
+      "area": "",
+      "propertyType": "",
+      "amenities": [],
+      "tags": []
+    },
+    "media": {
+      "coverImage": {
+        "url": "/projects/6a6dad81f8285c8c02c7603e/cover/1785572738152-03d81712d775",
+        "alt": ""
+      },
+      "gallery": []
+    },
+    "videos": [],
+    "brochures": [],
+    "legalDocuments": [],
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": "",
+      "shareDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Draft",
+      "isDeleted": false
+    },
+    "createdAt": "2026-08-01T08:25:37.332Z",
+    "updatedAt": "2026-08-01T08:25:38.190Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a6dadc6f8285c8c02c7604b",
+    "general": {
+      "projectName": "dajfdjqefdad",
+      "builderName": "dajfdjqefdad",
+      "slug": "dajfdjqefdad",
+      "projectType": "Commercial",
+      "tagline": "dfadfas",
+      "description": "jkdjkfajFADF"
+    },
+    "projectTag": "P0013",
+    "projectCategory": "portfolio",
+    "parentProject": null,
+    "contact": {
+      "phone": "",
+      "whatsapp": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "kjaksdfk",
+      "city": "",
+      "state": "",
+      "pincode": "",
+      "googleMaps": ""
+    },
+    "specifications": [],
+    "filters": {
+      "city": "",
+      "area": "",
+      "propertyType": "",
+      "amenities": [],
+      "tags": []
+    },
+    "media": {
+      "coverImage": {
+        "url": "/projects/6a6dadc6f8285c8c02c7604b/cover/1785572807619-191751f25074",
+        "alt": ""
+      },
+      "gallery": []
+    },
+    "videos": [],
+    "brochures": [],
+    "legalDocuments": [],
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": "",
+      "shareDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Draft",
+      "isDeleted": false
+    },
+    "createdAt": "2026-08-01T08:26:46.916Z",
+    "updatedAt": "2026-08-01T08:26:47.655Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a6daf6bf8285c8c02c7606c",
+    "general": {
+      "projectName": "waerdafadf",
+      "builderName": "waerdafadf",
+      "slug": "waerdafadf",
+      "projectType": "Commercial",
+      "tagline": "asdasfdw",
+      "description": "rdgfgf"
+    },
+    "projectTag": "P0014",
+    "projectCategory": "portfolio",
+    "parentProject": null,
+    "contact": {
+      "phone": "87845465178",
+      "whatsapp": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "kjkjkl",
+      "city": "",
+      "state": "",
+      "pincode": "",
+      "googleMaps": ""
+    },
+    "specifications": [],
+    "filters": {
+      "city": "",
+      "area": "",
+      "propertyType": "",
+      "amenities": [],
+      "tags": []
+    },
+    "media": {
+      "coverImage": {
+        "url": "/projects/6a6daf6bf8285c8c02c7606c/cover/1785573237106-067de844d97d",
+        "alt": ""
+      },
+      "gallery": []
+    },
+    "videos": [],
+    "brochures": [],
+    "legalDocuments": [],
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": "",
+      "shareDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Draft",
+      "isDeleted": false
+    },
+    "createdAt": "2026-08-01T08:33:47.257Z",
+    "updatedAt": "2026-08-01T08:33:57.152Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a6db00cf8285c8c02c76082",
+    "general": {
+      "projectName": "afva rerq3",
+      "builderName": "afva rerq3",
+      "slug": "afva-rerq3",
+      "projectType": "Commercial",
+      "tagline": "asdfasdf",
+      "description": "dghars"
+    },
+    "projectTag": "P0015",
+    "projectCategory": "portfolio",
+    "parentProject": null,
+    "contact": {
+      "phone": "",
+      "whatsapp": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "dasf43wr",
+      "city": "",
+      "state": "",
+      "pincode": "",
+      "googleMaps": ""
+    },
+    "specifications": [],
+    "filters": {
+      "city": "",
+      "area": "",
+      "propertyType": "",
+      "amenities": [],
+      "tags": []
+    },
+    "media": {
+      "coverImage": null,
+      "gallery": []
+    },
+    "videos": [],
+    "brochures": [],
+    "legalDocuments": [],
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": "",
+      "shareDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Draft",
+      "isDeleted": false
+    },
+    "createdAt": "2026-08-01T08:36:28.196Z",
+    "updatedAt": "2026-08-01T08:36:28.196Z",
+    "__v": 0
   }
 ]

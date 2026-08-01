@@ -60,8 +60,10 @@ const CreateProject = () => {
 
         const images = album.images || [];
 
+        const newImages = images.filter((img) => img.file);
+
         await Promise.all(
-          images.map((image, index) =>
+          newImages.map((image, index) =>
             projectService.uploadGalleryImage(project._id, image.file, {
               albumName: album.albumName.trim(),
               caption: image.caption || "",
@@ -73,8 +75,9 @@ const CreateProject = () => {
       }
 
       // Upload brochures
+      const newBrochures = brochures.filter((doc) => doc.file);
       await Promise.all(
-        brochures.map((brochure) =>
+        newBrochures.map((brochure) =>
           projectService.uploadBrochure(
             project._id,
             brochure.file,
@@ -84,8 +87,9 @@ const CreateProject = () => {
       );
 
       // Upload legal documents
+      const newLegalDocs = legalDocuments.filter((doc) => doc.file);
       await Promise.all(
-        legalDocuments.map((document) =>
+        newLegalDocs.map((document) =>
           projectService.uploadLegalDocument(
             project._id,
             document.file,
@@ -95,8 +99,9 @@ const CreateProject = () => {
       );
 
       // Upload floor plans
+      const newFloorPlans = floorPlans.filter((doc) => doc.file);
       await Promise.all(
-        floorPlans.map((floorPlan) =>
+        newFloorPlans.map((floorPlan) =>
           projectService.uploadFloorPlan(
             project._id,
             floorPlan.file,
