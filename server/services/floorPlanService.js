@@ -1,7 +1,7 @@
-import { spawn } from "child_process";
 import fs from "fs/promises";
 import path from "path";
 import { randomUUID } from "crypto";
+import { processPdf } from "../utils/pdfToDzi.js";
 
 const ROOT_UPLOAD_DIR = path.join(process.cwd(), "uploads", "floorplans");
 
@@ -23,9 +23,7 @@ class FloorPlanService {
 
     await fs.rename(tempPdfPath, originalPdf);
 
-    const pythonScript = path.join(process.cwd(), "python", "pdf_to_dzi.py");
-
-    const result = await this.runPython(pythonScript, originalPdf, outputDir);
+    const result = await processPdf(originalPdf, outputDir);
 
     return {
       floorPlanId,
@@ -56,40 +54,6 @@ class FloorPlanService {
     return newFloorPlan;
   }
 
-  runPython(script, pdf, output) {
-    return new Promise((resolve, reject) => {
-      const process = spawn("python", [script, pdf, output]);
-
-      let stdout = "";
-      let stderr = "";
-
-      process.stdout.on("data", (data) => {
-        stdout += data.toString();
-      });
-
-      process.stderr.on("data", (data) => {
-        stderr += data.toString();
-      });
-
-      process.on("close", (code) => {
-        if (code !== 0) {
-          return reject(new Error(stderr || stdout));
-        }
-
-        try {
-          const json = JSON.parse(stdout);
-
-          if (!json.success) {
-            return reject(new Error(json.error));
-          }
-
-          resolve(json);
-        } catch (err) {
-          reject(err);
-        }
-      });
-    });
-  }
 
   normalize(filePath) {
     return filePath.replace(/\\/g, "/");

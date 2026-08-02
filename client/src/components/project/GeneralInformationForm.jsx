@@ -3,6 +3,7 @@ import { useFormContext, Controller } from "react-hook-form";
 import { useQuery } from "@tanstack/react-query";
 
 import projectService from "@/services/project/projectService";
+import { getFilterSuggestions } from "@/services/filterService";
 import AutocompleteField from "@/components/common/AutocompleteField";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -34,6 +35,18 @@ const GeneralInformationForm = ({ projectType }) => {
   });
 
   const portfolioTours = portfolioResponse?.data?.items || [];
+
+  const { data: projectTypesData } = useQuery({
+    queryKey: ["filterSuggestions", "projectType"],
+    queryFn: () => getFilterSuggestions("projectType", ""),
+  });
+
+  const dynamicProjectTypes = projectTypesData || [];
+  const defaultTypes = ["Residential", "Commercial", "Industrial", "Mixed Use"];
+  const allTypes = [...new Set([...defaultTypes, ...dynamicProjectTypes.map(d => d.value)])];
+
+  const selectedProjectType = watch("general.projectType");
+  const isCustomType = selectedProjectType === "Custom";
 
   useEffect(() => {
     if (!projectName) return;
@@ -131,14 +144,22 @@ const GeneralInformationForm = ({ projectType }) => {
                 Select Project Type
               </option>
 
-              <option value="Residential">Residential</option>
+              {allTypes.map((type) => (
+                <option key={type} value={type}>
+                  {type}
+                </option>
+              ))}
 
-              <option value="Commercial">Commercial</option>
-
-              <option value="Industrial">Industrial</option>
-
-              <option value="Mixed Use">Mixed Use</option>
+              <option value="Custom">Custom (Add New...)</option>
             </select>
+
+            {isCustomType && (
+              <Input
+                className="mt-2"
+                placeholder="Enter custom project type..."
+                {...register("general.customProjectType")}
+              />
+            )}
           </div>
         </div>
 

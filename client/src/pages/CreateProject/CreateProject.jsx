@@ -45,6 +45,14 @@ const CreateProject = () => {
       data.legalDocuments = [];
       data.floorPlans = [];
 
+      // Intercept custom project type
+      if (data.general?.projectType === "Custom" && data.general?.customProjectType) {
+        data.general.projectType = data.general.customProjectType;
+      }
+      if (data.general) {
+        delete data.general.customProjectType;
+      }
+
       const response = await projectService.createProject(data);
 
       const project = response.data?.project;

@@ -92,6 +92,14 @@ const EditProject = () => {
       data.legalDocuments = legalDocuments.filter((doc) => !doc.file && doc.url);
       data.floorPlans = floorPlans.filter((doc) => !doc.file && doc.url);
 
+      // Intercept custom project type
+      if (data.general?.projectType === "Custom" && data.general?.customProjectType) {
+        data.general.projectType = data.general.customProjectType;
+      }
+      if (data.general) {
+        delete data.general.customProjectType;
+      }
+
       // Update project JSON data
       const response = await projectService.updateProject(id, data);
 

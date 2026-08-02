@@ -3124,5 +3124,333 @@
     "createdAt": "2026-08-01T11:38:13.449Z",
     "updatedAt": "2026-08-01T11:38:32.130Z",
     "__v": 0
+  },
+  {
+    "_id": "6a6ddf704d64c4315e148894",
+    "general": {
+      "projectName": "pramukh ABC",
+      "builderName": "pramukh ABC",
+      "slug": "pramukh-abc",
+      "projectType": "Commercial",
+      "tagline": "the best group",
+      "description": "trusted by 1500+ families."
+    },
+    "projectTag": "P0024",
+    "projectCategory": "portfolio",
+    "parentProject": null,
+    "contact": {
+      "phone": "",
+      "whatsapp": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "adadf",
+      "city": "",
+      "state": "",
+      "pincode": "",
+      "googleMaps": ""
+    },
+    "specifications": [],
+    "filters": {
+      "city": "",
+      "area": "",
+      "propertyType": "",
+      "amenities": [],
+      "tags": []
+    },
+    "media": {
+      "coverImage": {
+        "url": "/projects/6a6ddf704d64c4315e148894/cover/1785585532865-4dddae9a3e46",
+        "alt": ""
+      },
+      "gallery": []
+    },
+    "videos": [],
+    "brochures": [],
+    "legalDocuments": [],
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": "",
+      "shareDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Draft",
+      "isDeleted": false
+    },
+    "createdAt": "2026-08-01T11:58:40.676Z",
+    "updatedAt": "2026-08-01T11:58:53.958Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a6de2f24d64c4315e1488d1",
+    "general": {
+      "projectName": "lkjkllk",
+      "builderName": "kjlklk",
+      "slug": "lkjkllk",
+      "projectType": "Industrial",
+      "tagline": "",
+      "description": "dkmsdalla"
+    },
+    "projectTag": "P0025",
+    "projectCategory": "individual",
+    "parentProject": null,
+    "contact": {
+      "phone": "",
+      "whatsapp": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "",
+      "city": "",
+      "state": "",
+      "pincode": "",
+      "googleMaps": ""
+    },
+    "specifications": [],
+    "filters": {
+      "city": "surat",
+      "area": "Vesu",
+      "propertyType": "",
+      "amenities": [
+        "luxury"
+      ],
+      "tags": []
+    },
+    "media": {
+      "coverImage": {
+        "url": "/projects/6a6de2f24d64c4315e1488d1/cover/1785586431608-4bac3b70dbf8",
+        "alt": ""
+      },
+      "gallery": [
+        {
+          "albumName": "ground floor",
+          "displayOrder": 0,
+          "images": [
+            {
+              "url": "/projects/6a6de2f24d64c4315e1488d1/gallery/1785586444033-54f2c1f2e27a",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 2
+            },
+            {
+              "url": "/projects/6a6de2f24d64c4315e1488d1/gallery/1785586444145-bdc207314a48",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 3
+            },
+            {
+              "url": "/projects/6a6de2f24d64c4315e1488d1/gallery/1785586444846-26e746af1aea",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 0
+            },
+            {
+              "url": "/projects/6a6de2f24d64c4315e1488d1/gallery/1785586445691-38512733d837",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 1
+            }
+          ]
+        }
+      ]
+    },
+    "videos": [],
+    "brochures": [
+      {
+        "title": "aryan Chelku Vegetable Company PBL Report-2-4",
+        "url": "/projects/6a6de2f24d64c4315e1488d1/brochures/1785586447443-52b1fca68f1f.pdf",
+        "createdAt": "2026-08-01T12:14:07.925Z",
+        "updatedAt": "2026-08-01T12:14:07.925Z"
+      }
+    ],
+    "legalDocuments": [
+      {
+        "title": "ilovepdf_merged",
+        "url": "/projects/6a6de2f24d64c4315e1488d1/legal/1785586448958-61f15b63f25f.pdf",
+        "createdAt": "2026-08-01T12:14:09.194Z",
+        "updatedAt": "2026-08-01T12:14:09.194Z"
+      }
+    ],
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": "",
+      "shareDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Draft",
+      "isDeleted": false
+    },
+    "createdAt": "2026-08-01T12:13:38.245Z",
+    "updatedAt": "2026-08-01T12:14:09.195Z",
+    "__v": 6
+  },
+  {
+    "_id": "6a6de6a145519ceaa6f91056",
+    "general": {
+      "projectName": "heyyy",
+      "builderName": "heyy",
+      "slug": "heyyy",
+      "projectType": "Industrial",
+      "tagline": "",
+      "description": "kdjaskjdf"
+    },
+    "projectTag": "P0026",
+    "projectCategory": "individual",
+    "parentProject": null,
+    "contact": {
+      "phone": "7567918219",
+      "whatsapp": "7567918219",
+      "email": "hey@example.com",
+      "website": "https://google.com/",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "youtube": ""
+    },
+    "location": {
+      "address": "akjfjkdjafkj",
+      "city": "surat",
+      "state": "guj",
+      "pincode": "395009",
+      "googleMaps": ""
+    },
+    "specifications": [
+      {
+        "primaryTitle": "ground floor",
+        "items": [
+          {
+            "title": "garage",
+            "description": "hey this is garage"
+          }
+        ]
+      }
+    ],
+    "filters": {
+      "city": "surat",
+      "area": "rander",
+      "propertyType": "industrial",
+      "amenities": [
+        "great"
+      ],
+      "tags": [
+        "fantastic"
+      ]
+    },
+    "media": {
+      "coverImage": {
+        "url": "/projects/6a6de6a145519ceaa6f91056/cover/1785587382789-77a27bb0ada0",
+        "alt": ""
+      },
+      "gallery": [
+        {
+          "albumName": "test",
+          "displayOrder": 0,
+          "images": [
+            {
+              "url": "/projects/6a6de6a145519ceaa6f91056/gallery/1785587399716-fa575ac3d9db",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 3
+            },
+            {
+              "url": "/projects/6a6de6a145519ceaa6f91056/gallery/1785587400173-544b8363e0a4",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 4
+            },
+            {
+              "url": "/projects/6a6de6a145519ceaa6f91056/gallery/1785587401207-6d9a0c2cda1e",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 0
+            },
+            {
+              "url": "/projects/6a6de6a145519ceaa6f91056/gallery/1785587401325-1b27e6648dfc",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 1
+            },
+            {
+              "url": "/projects/6a6de6a145519ceaa6f91056/gallery/1785587402753-10fcd6ea7df3",
+              "alt": "",
+              "caption": "",
+              "displayOrder": 2
+            }
+          ]
+        }
+      ]
+    },
+    "videos": [],
+    "brochures": [
+      {
+        "title": "aryan Chelku Vegetable Company PBL Report-2-4",
+        "url": "/projects/6a6de6a145519ceaa6f91056/brochures/1785587403151-168000f23ab4.pdf",
+        "createdAt": "2026-08-01T12:30:03.203Z",
+        "updatedAt": "2026-08-01T12:30:03.203Z"
+      },
+      {
+        "title": "ilovepdf_merged",
+        "url": "/projects/6a6de6a145519ceaa6f91056/brochures/1785587403148-2844a7ecb30f.pdf",
+        "createdAt": "2026-08-01T12:30:03.217Z",
+        "updatedAt": "2026-08-01T12:30:03.217Z"
+      },
+      {
+        "title": "Project Management 7050",
+        "url": "/projects/6a6de6a145519ceaa6f91056/brochures/1785587403154-42ff7b55962e.pdf",
+        "createdAt": "2026-08-01T12:30:03.230Z",
+        "updatedAt": "2026-08-01T12:30:03.230Z"
+      },
+      {
+        "title": "Project Management 7050-1",
+        "url": "/projects/6a6de6a145519ceaa6f91056/brochures/1785587403180-0d8911d5ba1c.pdf",
+        "createdAt": "2026-08-01T12:30:03.239Z",
+        "updatedAt": "2026-08-01T12:30:03.239Z"
+      },
+      {
+        "title": "aryan Chelku Vegetable Company PBL Report",
+        "url": "/projects/6a6de6a145519ceaa6f91056/brochures/1785587403212-d5bd1f28c231.pdf",
+        "createdAt": "2026-08-01T12:30:03.263Z",
+        "updatedAt": "2026-08-01T12:30:03.263Z"
+      }
+    ],
+    "legalDocuments": [
+      {
+        "title": "Project Management 7050",
+        "url": "/projects/6a6de6a145519ceaa6f91056/legal/1785587403627-77ec3468eba9.pdf",
+        "createdAt": "2026-08-01T12:30:03.788Z",
+        "updatedAt": "2026-08-01T12:30:03.788Z"
+      }
+    ],
+    "floorPlans": [],
+    "seo": {
+      "metaTitle": "",
+      "metaDescription": "",
+      "shareDescription": ""
+    },
+    "status": {
+      "featured": false,
+      "published": false,
+      "status": "Draft",
+      "isDeleted": false
+    },
+    "createdAt": "2026-08-01T12:29:21.303Z",
+    "updatedAt": "2026-08-01T12:30:03.788Z",
+    "__v": 11
   }
 ]
