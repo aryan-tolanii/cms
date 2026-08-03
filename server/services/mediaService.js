@@ -1,39 +1,7 @@
-import path from "path";
 import Project from "../models/Project.js";
 import ApiError from "../utils/ApiError.js";
-import {
-  PROJECTS_DIR,
-  moveUploadedFile,
-  deleteFile,
-} from "../utils/fileHelpers.js";
-
-/**
- * Converts an absolute file path under uploads/projects/ into the relative
- * path format stored in MongoDB, e.g.
- *   /home/.../uploads/projects/64f.../gallery/front.webp
- *   -> /projects/64f.../gallery/front.webp
- *
- * @param {string} absolutePath - Absolute path to a file inside PROJECTS_DIR
- * @returns {string} Relative path suitable for storing in the database
- */
-const toRelativePath = (absolutePath) => {
-  const relativeToProjectsDir = path.relative(PROJECTS_DIR, absolutePath);
-  return `/projects/${relativeToProjectsDir.split(path.sep).join("/")}`;
-};
-
-/**
- * Converts a relative path stored in MongoDB back into an absolute path
- * on disk, so the corresponding file can be deleted.
- *
- * @param {string} relativePath - e.g. "/projects/64f.../cover/old.jpg"
- * @returns {string} Absolute path on disk
- */
-const toAbsolutePath = (relativePath) => {
-  // Strip the leading "/projects/" segment, since PROJECTS_DIR already
-  // points at the "projects" folder.
-  const withoutPrefix = relativePath.replace(/^\/projects\//, "");
-  return path.join(PROJECTS_DIR, ...withoutPrefix.split("/"));
-};
+import { uploadOnCloudinary, deleteFromCloudinary } from "../utils/cloudinary.js";
+import { deleteFile } from "../utils/fileHelpers.js";
 
 /**
  * Fetches a project by id, excluding soft-deleted projects.
@@ -63,7 +31,7 @@ const getProjectOrThrow = async (projectId, file) => {
 
 /**
  * Uploads (and replaces) a project's cover image.
- * The previous cover image file, if any, is deleted from disk.
+ * The previous cover image file, if any, is deleted from Cloudinary.
  *
  * @param {string} projectId
  * @param {object} file - Multer file object (from uploads/temp/)
@@ -77,17 +45,19 @@ const uploadCoverImage = async (projectId, file, alt) => {
 
   const project = await getProjectOrThrow(projectId, file);
 
-  const destinationFolder = path.join(PROJECTS_DIR, String(projectId), "cover");
-  const movedPath = await moveUploadedFile(file.path, destinationFolder);
-  const relativePath = toRelativePath(movedPath);
+  const cloudinaryResponse = await uploadOnCloudinary(file.path, `portfolio-cms/projects/${projectId}/cover`);
+  
+  if (!cloudinaryResponse) {
+    throw new ApiError(500, "Failed to upload image to Cloudinary");
+  }
 
   const previousCoverUrl = project.media?.coverImage?.url;
 
-  project.media.coverImage = { url: relativePath, alt: alt || "" };
+  project.media.coverImage = { url: cloudinaryResponse.secure_url, alt: alt || "" };
   await project.save();
 
-  if (previousCoverUrl) {
-    await deleteFile(toAbsolutePath(previousCoverUrl));
+  if (previousCoverUrl && previousCoverUrl.includes("cloudinary.com")) {
+    await deleteFromCloudinary(previousCoverUrl, "image");
   }
 
   return project;
@@ -109,14 +79,11 @@ const uploadGalleryImage = async (projectId, file, meta = {}) => {
 
   const project = await getProjectOrThrow(projectId, file);
 
-  const destinationFolder = path.join(
-    PROJECTS_DIR,
-    String(projectId),
-    "gallery"
-  );
-
-  const movedPath = await moveUploadedFile(file.path, destinationFolder);
-  const relativePath = toRelativePath(movedPath);
+  const cloudinaryResponse = await uploadOnCloudinary(file.path, `portfolio-cms/projects/${projectId}/gallery`);
+  
+  if (!cloudinaryResponse) {
+    throw new ApiError(500, "Failed to upload image to Cloudinary");
+  }
 
   // Find existing album
   let album = project.media.gallery.find(
@@ -140,7 +107,7 @@ const uploadGalleryImage = async (projectId, file, meta = {}) => {
   }
 
   album.images.push({
-    url: relativePath,
+    url: cloudinaryResponse.secure_url,
     alt: meta.alt || "",
     caption: meta.caption || "",
     displayOrder:
@@ -170,14 +137,16 @@ const uploadVideo = async (projectId, file, meta = {}) => {
 
   const project = await getProjectOrThrow(projectId, file);
 
-  const destinationFolder = path.join(PROJECTS_DIR, String(projectId), "videos");
-  const movedPath = await moveUploadedFile(file.path, destinationFolder);
-  const relativePath = toRelativePath(movedPath);
+  const cloudinaryResponse = await uploadOnCloudinary(file.path, `portfolio-cms/projects/${projectId}/videos`);
+  
+  if (!cloudinaryResponse) {
+    throw new ApiError(500, "Failed to upload video to Cloudinary");
+  }
 
   project.videos.push({
     title: meta.title || "",
     type: "upload",
-    url: relativePath,
+    url: cloudinaryResponse.secure_url,
     displayOrder: meta.displayOrder !== undefined ? Number(meta.displayOrder) : project.videos.length,
   });
 
@@ -202,13 +171,15 @@ const uploadFloorPlan = async (projectId, file, meta = {}) => {
 
   const project = await getProjectOrThrow(projectId, file);
 
-  const destinationFolder = path.join(PROJECTS_DIR, String(projectId), "floorplans");
-  const movedPath = await moveUploadedFile(file.path, destinationFolder);
-  const relativePath = toRelativePath(movedPath);
+  const cloudinaryResponse = await uploadOnCloudinary(file.path, `portfolio-cms/projects/${projectId}/floorplans`);
+  
+  if (!cloudinaryResponse) {
+    throw new ApiError(500, "Failed to upload floor plan to Cloudinary");
+  }
 
   project.floorPlans.push({
     title: meta.title || "",
-    url: relativePath,
+    url: cloudinaryResponse.secure_url,
     displayOrder: meta.displayOrder !== undefined ? Number(meta.displayOrder) : project.floorPlans.length,
   });
 
@@ -219,7 +190,6 @@ const uploadFloorPlan = async (projectId, file, meta = {}) => {
 
 /**
  * Uploads (and replaces) a project's brochure.
- * The previous brochure file, if any, is deleted from disk.
  *
  * @param {string} projectId
  * @param {object} file - Multer file object (from uploads/temp/)
@@ -233,22 +203,15 @@ const uploadBrochure = async (projectId, file, title) => {
 
   const project = await getProjectOrThrow(projectId, file);
 
-  const destinationFolder = path.join(
-    PROJECTS_DIR,
-    String(projectId),
-    "brochures"
-  );
-
-  const movedPath = await moveUploadedFile(
-    file.path,
-    destinationFolder
-  );
-
-  const relativePath = toRelativePath(movedPath);
+  const cloudinaryResponse = await uploadOnCloudinary(file.path, `portfolio-cms/projects/${projectId}/brochures`);
+  
+  if (!cloudinaryResponse) {
+    throw new ApiError(500, "Failed to upload brochure to Cloudinary");
+  }
 
   project.brochures.push({
     title: title || "",
-    url: relativePath,
+    url: cloudinaryResponse.secure_url,
   });
 
   await project.save();
@@ -272,18 +235,15 @@ const uploadLegalDocument = async (projectId, file, title) => {
 
   const project = await getProjectOrThrow(projectId, file);
 
-  const destinationFolder = path.join(
-    PROJECTS_DIR,
-    String(projectId),
-    "legal"
-  );
-
-  const movedPath = await moveUploadedFile(file.path, destinationFolder);
-  const relativePath = toRelativePath(movedPath);
+  const cloudinaryResponse = await uploadOnCloudinary(file.path, `portfolio-cms/projects/${projectId}/legal`);
+  
+  if (!cloudinaryResponse) {
+    throw new ApiError(500, "Failed to upload legal document to Cloudinary");
+  }
 
   project.legalDocuments.push({
     title: title || "",
-    url: relativePath,
+    url: cloudinaryResponse.secure_url,
   });
 
   await project.save();
