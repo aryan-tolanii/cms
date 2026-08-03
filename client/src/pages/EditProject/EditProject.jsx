@@ -9,6 +9,7 @@ import { ROUTES } from "@/constants/routes";
 import { PROJECT_SECTIONS } from "@/constants/projectSections";
 
 import ProjectForm from "@/components/project/ProjectForm";
+import PortfolioTourForm from "@/components/project/PortfolioTourForm";
 
 const EditProject = () => {
   const { id } = useParams();
@@ -187,6 +188,18 @@ const EditProject = () => {
       <div className="rounded-lg border bg-white p-12 text-center">
         Loading project...
       </div>
+    );
+  }
+
+  const isPortfolioTour = methods.watch("projectCategory") === "portfolio";
+
+  if (isPortfolioTour) {
+    return (
+      <PortfolioTourForm
+        methods={methods}
+        onSubmit={onSubmit}
+        isSubmitting={isSubmitting}
+      />
     );
   }
 

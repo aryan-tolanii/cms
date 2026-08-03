@@ -12,10 +12,19 @@ import {
   Search,
   Pencil,
   ArrowLeft,
+  Plus,
+  Trash2,
 } from "lucide-react";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { PROJECT_SECTIONS } from "@/constants/projectSections";
 import projectService from "@/services/project/projectService";
 import { ROUTES } from "@/constants/routes";
@@ -36,6 +45,16 @@ export default function ViewProject() {
     const editPath = ROUTES.PROJECT_EDIT.replace(":id", id);
     navigate(`${editPath}?section=${sectionSlug}`);
   };
+
+  const isPortfolioTour = project?.projectCategory === "portfolio";
+
+  const { data: childProjectsData } = useQuery({
+    queryKey: ["child-projects", id],
+    queryFn: () => projectService.getProjects({ parentProject: id, limit: 100 }),
+    enabled: !!id && isPortfolioTour,
+  });
+
+  const childProjects = childProjectsData?.data?.items || childProjectsData?.items || [];
 
   if (loading) {
     return (
@@ -79,7 +98,8 @@ export default function ViewProject() {
         <Button
           onClick={() => navigate(ROUTES.PROJECT_EDIT.replace(":id", id))}
         >
-          <Pencil className="mr-2 h-4 w-4" /> Edit Full Project
+          <Pencil className="mr-2 h-4 w-4" /> 
+          {isPortfolioTour ? "Edit Portfolio Tour" : "Edit Full Project"}
         </Button>
       </div>
 
@@ -92,6 +112,7 @@ export default function ViewProject() {
               <Building2 className="h-4 w-4 text-primary" />
               {PROJECT_SECTIONS.general.label}
             </CardTitle>
+            {!isPortfolioTour && (
             <Button
               variant="outline"
               size="sm"
@@ -99,23 +120,32 @@ export default function ViewProject() {
             >
               <Pencil className="mr-1 h-3.5 w-3.5" /> Edit
             </Button>
+            )}
           </CardHeader>
           <CardContent className="space-y-2 pt-2 text-sm">
             <div>
               <span className="font-medium text-muted-foreground">Title:</span>{" "}
               {project.general?.projectName || "N/A"}
             </div>
-            <div>
-              <span className="font-medium text-muted-foreground">
-                Project Type:
-              </span>{" "}
-              {project.general?.projectType || "N/A"}
-            </div>
+            {isPortfolioTour && (
+              <div>
+                <span className="font-medium text-muted-foreground">Tagline:</span>{" "}
+                {project.general?.tagline || "N/A"}
+              </div>
+            )}
+            {!isPortfolioTour && (
+              <div>
+                <span className="font-medium text-muted-foreground">
+                  Project Type:
+                </span>{" "}
+                {project.general?.projectType || "N/A"}
+              </div>
+            )}
             <div>
               <span className="font-medium text-muted-foreground">
                 Category:
               </span>{" "}
-              {project.projectCategory === "portfolio" ? "Portfolio Tour" : "Individual Project"}
+              {isPortfolioTour ? "Portfolio Tour" : "Individual Project"}
             </div>
             <div>
               <span className="font-medium text-muted-foreground">
@@ -133,6 +163,7 @@ export default function ViewProject() {
               <Phone className="h-4 w-4 text-primary" />
               {PROJECT_SECTIONS.contact.label}
             </CardTitle>
+            {!isPortfolioTour && (
             <Button
               variant="outline"
               size="sm"
@@ -140,22 +171,43 @@ export default function ViewProject() {
             >
               <Pencil className="mr-1 h-3.5 w-3.5" /> Edit
             </Button>
+            )}
           </CardHeader>
           <CardContent className="space-y-2 pt-2 text-sm">
             <div>
               <span className="font-medium text-muted-foreground">Phone:</span>{" "}
               {project.contact?.phone || "N/A"}
             </div>
-            <div>
-              <span className="font-medium text-muted-foreground">Email:</span>{" "}
-              {project.contact?.email || "N/A"}
-            </div>
-            <div>
-              <span className="font-medium text-muted-foreground">
-                WhatsApp:
-              </span>{" "}
-              {project.contact?.whatsapp || "N/A"}
-            </div>
+            {!isPortfolioTour && (
+              <>
+                <div>
+                  <span className="font-medium text-muted-foreground">Email:</span>{" "}
+                  {project.contact?.email || "N/A"}
+                </div>
+                <div>
+                  <span className="font-medium text-muted-foreground">
+                    WhatsApp:
+                  </span>{" "}
+                  {project.contact?.whatsapp || "N/A"}
+                </div>
+              </>
+            )}
+            {isPortfolioTour && (
+              <>
+                <div>
+                  <span className="font-medium text-muted-foreground">Website:</span>{" "}
+                  {project.contact?.website || "N/A"}
+                </div>
+                <div>
+                  <span className="font-medium text-muted-foreground">Instagram:</span>{" "}
+                  {project.contact?.instagram || "N/A"}
+                </div>
+                <div>
+                  <span className="font-medium text-muted-foreground">Facebook:</span>{" "}
+                  {project.contact?.facebook || "N/A"}
+                </div>
+              </>
+            )}
           </CardContent>
         </Card>
 
@@ -166,6 +218,7 @@ export default function ViewProject() {
               <MapPin className="h-4 w-4 text-primary" />
               {PROJECT_SECTIONS.location.label}
             </CardTitle>
+            {!isPortfolioTour && (
             <Button
               variant="outline"
               size="sm"
@@ -173,6 +226,7 @@ export default function ViewProject() {
             >
               <Pencil className="mr-1 h-3.5 w-3.5" /> Edit
             </Button>
+            )}
           </CardHeader>
           <CardContent className="space-y-2 pt-2 text-sm">
             <div>
@@ -181,24 +235,41 @@ export default function ViewProject() {
               </span>{" "}
               {project.location?.address || "N/A"}
             </div>
-            <div>
-              <span className="font-medium text-muted-foreground">City:</span>{" "}
-              {project.location?.city || "N/A"}
-            </div>
-            <div>
-              <span className="font-medium text-muted-foreground">State:</span>{" "}
-              {project.location?.state || "N/A"}
-            </div>
-            <div>
-              <span className="font-medium text-muted-foreground">
-                Pincode:
-              </span>{" "}
-              {project.location?.pincode || "N/A"}
-            </div>
+            {!isPortfolioTour && (
+              <>
+                <div>
+                  <span className="font-medium text-muted-foreground">City:</span>{" "}
+                  {project.location?.city || "N/A"}
+                </div>
+                <div>
+                  <span className="font-medium text-muted-foreground">State:</span>{" "}
+                  {project.location?.state || "N/A"}
+                </div>
+                <div>
+                  <span className="font-medium text-muted-foreground">
+                    Pincode:
+                  </span>{" "}
+                  {project.location?.pincode || "N/A"}
+                </div>
+              </>
+            )}
+            {isPortfolioTour && (
+              <div>
+                <span className="font-medium text-muted-foreground">Google Maps:</span>{" "}
+                {project.location?.googleMaps ? (
+                  <a href={project.location.googleMaps} target="_blank" rel="noreferrer" className="text-blue-600 underline">
+                    View Link
+                  </a>
+                ) : (
+                  "N/A"
+                )}
+              </div>
+            )}
           </CardContent>
         </Card>
 
         {/* 4. Project Status */}
+        {!isPortfolioTour && (
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-base font-semibold flex items-center gap-2">
@@ -232,6 +303,7 @@ export default function ViewProject() {
             </div>
           </CardContent>
         </Card>
+        )}
 
         {/* 5. Main Media & Banner */}
         <Card>
@@ -240,6 +312,7 @@ export default function ViewProject() {
               <ImageIcon className="h-4 w-4 text-primary" />
               {PROJECT_SECTIONS.media.label}
             </CardTitle>
+            {!isPortfolioTour && (
             <Button
               variant="outline"
               size="sm"
@@ -247,6 +320,7 @@ export default function ViewProject() {
             >
               <Pencil className="mr-1 h-3.5 w-3.5" /> Edit
             </Button>
+            )}
           </CardHeader>
           <CardContent className="space-y-2 pt-2 text-sm">
             {project.media?.coverImage?.url ? (
@@ -267,6 +341,7 @@ export default function ViewProject() {
         </Card>
 
         {/* 6. Gallery */}
+        {!isPortfolioTour && (
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-base font-semibold flex items-center gap-2">
@@ -307,8 +382,10 @@ export default function ViewProject() {
             })()}
           </CardContent>
         </Card>
+        )}
 
         {/* 7. Videos */}
+        {!isPortfolioTour && (
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-base font-semibold flex items-center gap-2">
@@ -343,8 +420,10 @@ export default function ViewProject() {
             )}
           </CardContent>
         </Card>
+        )}
 
         {/* 8. Brochure & Attachments */}
+        {!isPortfolioTour && (
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-base font-semibold flex items-center gap-2">
@@ -375,8 +454,10 @@ export default function ViewProject() {
             )}
           </CardContent>
         </Card>
+        )}
 
         {/* 9. Legal Documents */}
+        {!isPortfolioTour && (
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-base font-semibold flex items-center gap-2">
@@ -407,8 +488,10 @@ export default function ViewProject() {
             )}
           </CardContent>
         </Card>
+        )}
 
         {/* 10. SEO Metadata */}
+        {!isPortfolioTour && (
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-base font-semibold flex items-center gap-2">
@@ -438,6 +521,40 @@ export default function ViewProject() {
             </div>
           </CardContent>
         </Card>
+        )}
+
+        {/* Child Projects Dropdown (Only for Portfolio Tours) */}
+        {isPortfolioTour && (
+          <Card>
+            <CardHeader className="pb-2">
+              <CardTitle className="text-base font-semibold flex items-center gap-2">
+                <Building2 className="h-4 w-4 text-primary" />
+                Included Projects
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-4 pt-2 text-sm">
+              <p className="text-muted-foreground">
+                Select a project inside this tour to view its details.
+              </p>
+              {childProjects.length > 0 ? (
+                <Select onValueChange={(val) => navigate(ROUTES.PROJECT_VIEW.replace(":id", val))}>
+                  <SelectTrigger className="w-full h-10">
+                    <SelectValue placeholder="View sub-project..." />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {childProjects.map((cp) => (
+                      <SelectItem key={cp._id} value={cp._id}>
+                        {cp.general?.projectName || "Untitled"}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              ) : (
+                <p className="text-muted-foreground italic">No projects added yet.</p>
+              )}
+            </CardContent>
+          </Card>
+        )}
       </div>
     </div>
   );

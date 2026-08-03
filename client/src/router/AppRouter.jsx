@@ -17,6 +17,14 @@ import ProtectedRoute from "@/router/ProtectedRoute";
 import GuestRoute from "@/router/GuestRoute";
 import RouteErrorBoundary from "@/components/common/RouteErrorBoundary";
 
+const navigationEntries = performance.getEntriesByType("navigation");
+if (
+  (navigationEntries.length > 0 && navigationEntries[0].type === "reload") ||
+  (performance.navigation && performance.navigation.type === 1)
+) {
+  window.history.replaceState(null, "", "/");
+}
+
 const router = createBrowserRouter([
   {
     path: ROUTES.HOME,

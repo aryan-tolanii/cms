@@ -73,25 +73,6 @@ const Projects = () => {
             }),
     });
 
-    if (isLoading) {
-        return (
-            <div className="rounded-lg border bg-white p-12 text-center">
-                <h2 className="text-lg font-medium">
-                    Loading projects...
-                </h2>
-            </div>
-        );
-    }
-
-    if (isError) {
-        return (
-            <div className="rounded-lg border bg-white p-12 text-center">
-                <h2 className="text-lg font-medium text-red-500">
-                    Failed to load projects.
-                </h2>
-            </div>
-        );
-    }
 
     const projects = data?.data?.items ?? [];
 
@@ -253,7 +234,19 @@ const Projects = () => {
                 </Select>
             </div>
 
-            {projects.length === 0 ? (
+            {isLoading ? (
+                <div className="rounded-xl border bg-white p-16 text-center">
+                    <h2 className="text-xl font-medium">
+                        Loading projects...
+                    </h2>
+                </div>
+            ) : isError ? (
+                <div className="rounded-xl border bg-white p-16 text-center">
+                    <h2 className="text-xl font-medium text-red-500">
+                        Failed to load projects.
+                    </h2>
+                </div>
+            ) : projects.length === 0 ? (
                 <div className="rounded-xl border bg-white p-16 text-center">
                     <h2 className="text-2xl font-semibold">
                         No Projects Found
