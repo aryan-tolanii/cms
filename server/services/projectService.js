@@ -17,6 +17,7 @@ const buildProjectFilter = ({
   status,
   featured,
   projectCategory,
+  parentProject,
 } = {}) => {
   const filter = {
     "status.isDeleted": { $ne: true },
@@ -43,6 +44,14 @@ const buildProjectFilter = ({
     filter.projectCategory = projectCategory;
   }
 
+  if (parentProject) {
+    filter.parentProject = parentProject;
+  } else if (!search) {
+    // Default: hide individual projects that are part of a portfolio tour 
+    // unless the user is actively searching
+    filter.parentProject = null;
+  }
+
   return filter;
 };
 
@@ -55,6 +64,31 @@ const createProject = async (projectData) => {
 
   if (existingProject) {
     throw new ApiError(409, "A project with this slug already exists");
+  }
+
+  // Sanitize Portfolio Tours
+  if (projectData.projectCategory === "portfolio") {
+    if (projectData.contact) {
+      delete projectData.contact.email;
+      delete projectData.contact.whatsapp;
+      delete projectData.contact.youtube;
+      delete projectData.contact.linkedin;
+    }
+    if (projectData.location) {
+      delete projectData.location.city;
+      delete projectData.location.state;
+      delete projectData.location.pincode;
+    }
+    projectData.specifications = [];
+    projectData.filters = {};
+    projectData.videos = [];
+    projectData.brochures = [];
+    projectData.legalDocuments = [];
+    projectData.floorPlans = [];
+    projectData.seo = {};
+    if (projectData.media) {
+      projectData.media.gallery = [];
+    }
   }
 
   // Normalize parentProject
@@ -255,6 +289,7 @@ const getProjects = async (queryParams) => {
     status,
     featured,
     projectCategory,
+    parentProject,
     sort,
   } = queryParams;
 
@@ -266,6 +301,7 @@ const getProjects = async (queryParams) => {
     status,
     featured,
     projectCategory,
+    parentProject,
   });
 
   const sortOption = buildProjectSort(sort);
@@ -403,6 +439,31 @@ const updateProject = async (id, updateData) => {
       project[key] = value;
     }
   });
+
+  // Sanitize Portfolio Tours before saving
+  if (project.projectCategory === "portfolio") {
+    if (project.contact) {
+      project.contact.email = undefined;
+      project.contact.whatsapp = undefined;
+      project.contact.youtube = undefined;
+      project.contact.linkedin = undefined;
+    }
+    if (project.location) {
+      project.location.city = undefined;
+      project.location.state = undefined;
+      project.location.pincode = undefined;
+    }
+    project.specifications = [];
+    project.filters = {};
+    project.videos = [];
+    project.brochures = [];
+    project.legalDocuments = [];
+    project.floorPlans = [];
+    project.seo = {};
+    if (project.media) {
+      project.media.gallery = [];
+    }
+  }
 
   await project.save();
 
