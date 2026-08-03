@@ -2,6 +2,7 @@ import asyncHandler from "../utils/asyncHandler.js";
 import sendSuccess from "../utils/apiResponse.js";
 import {
   uploadCoverImage,
+  uploadThumbnailImage,
   uploadGalleryImage,
   uploadVideo,
   uploadFloorPlan,
@@ -21,6 +22,22 @@ const uploadCover = asyncHandler(async (req, res) => {
   );
 
   sendSuccess(res, 200, "Cover image uploaded successfully", {
+    project,
+  });
+});
+
+/**
+ * @route   POST /api/projects/:id/media/thumbnail
+ * @access  Private
+ */
+const uploadThumbnail = asyncHandler(async (req, res) => {
+  const project = await uploadThumbnailImage(
+    req.params.id,
+    req.file,
+    req.body.alt
+  );
+
+  sendSuccess(res, 200, "Thumbnail image uploaded successfully", {
     project,
   });
 });
@@ -129,6 +146,7 @@ const uploadProjectLegal = asyncHandler(async (req, res) => {
 
 export {
   uploadCover,
+  uploadThumbnail,
   uploadGallery,
   uploadProjectVideo,
   uploadProjectFloorPlan,

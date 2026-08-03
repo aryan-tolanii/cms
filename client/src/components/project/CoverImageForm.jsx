@@ -14,6 +14,7 @@ const MediaInformationForm = ({
   showBrochures = true,
   showLegalDocuments = true,
   showFloorPlans = true,
+  showThumbnailImage = false,
 }) => {
   const { control } = useFormContext();
 
@@ -36,6 +37,21 @@ const MediaInformationForm = ({
             />
           )}
         />
+
+        {/* Thumbnail Image */}
+        {showThumbnailImage && (
+          <Controller
+            name="media.thumbnailImage"
+            control={control}
+            render={({ field }) => (
+              <ImageUpload
+                label="Thumbnail Image"
+                value={field.value}
+                onChange={field.onChange}
+              />
+            )}
+          />
+        )}
 
         {/* Gallery Albums */}
         {showGallery && <GalleryAlbums />}

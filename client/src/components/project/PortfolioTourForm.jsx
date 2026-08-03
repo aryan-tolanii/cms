@@ -131,6 +131,7 @@ const PortfolioTourFields = () => {
                 showBrochures={false}
                 showLegalDocuments={false}
                 showFloorPlans={false}
+                showThumbnailImage={true}
             />
         </div>
     );

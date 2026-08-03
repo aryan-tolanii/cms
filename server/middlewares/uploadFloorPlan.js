@@ -30,8 +30,9 @@ const fileFilter = (req, file, cb) => {
     mimetype: file.mimetype,
   });
 
-  if (file.mimetype !== "application/pdf") {
-    return cb(new Error("Only PDF files are allowed."));
+  const allowedTypes = ["application/pdf", "image/png", "image/jpeg", "image/jpg"];
+  if (!allowedTypes.includes(file.mimetype)) {
+    return cb(new Error("Only PDF, PNG, and JPEG files are allowed for floor plans."));
   }
 
   cb(null, true);

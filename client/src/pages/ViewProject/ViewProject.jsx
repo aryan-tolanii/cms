@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import {
@@ -29,10 +30,14 @@ import { PROJECT_SECTIONS } from "@/constants/projectSections";
 import projectService from "@/services/project/projectService";
 import { ROUTES } from "@/constants/routes";
 import { getImageUrl } from "@/lib/utils";
+import GalleryLightbox from "@/components/project/GalleryLightbox";
 
 export default function ViewProject() {
   const { id } = useParams();
   const navigate = useNavigate();
+  const [isGalleryOpen, setIsGalleryOpen] = useState(false);
+  const [isLogoOpen, setIsLogoOpen] = useState(false);
+  const [isThumbnailOpen, setIsThumbnailOpen] = useState(false);
 
   const { data, isLoading: loading, isError } = useQuery({
     queryKey: ["project", id],
@@ -321,20 +326,43 @@ export default function ViewProject() {
             </Button>
             )}
           </CardHeader>
-          <CardContent className="space-y-2 pt-2 text-sm">
-            {project.media?.coverImage?.url ? (
-              <div className="flex items-center gap-3">
-                <img
-                  src={getImageUrl(project.media.coverImage.url)}
-                  alt="Banner"
-                  className="h-16 w-24 object-cover rounded border"
-                />
-                <span className="text-xs text-muted-foreground">
-                  Cover Image
-                </span>
+          <CardContent className="space-y-4 pt-2 text-sm flex gap-6">
+            <div>
+              {project.media?.coverImage?.url ? (
+                <div className="flex flex-col gap-2">
+                  <span className="text-xs text-muted-foreground font-semibold">
+                    Logo
+                  </span>
+                  <img
+                    src={getImageUrl(project.media.coverImage.url)}
+                    alt="Logo"
+                    className="h-20 w-32 object-contain p-1 rounded border cursor-pointer hover:opacity-80 transition-opacity"
+                    onClick={() => setIsLogoOpen(true)}
+                  />
+                </div>
+              ) : (
+                <p className="text-muted-foreground">No logo uploaded.</p>
+              )}
+            </div>
+
+            {isPortfolioTour && (
+              <div>
+                {project.media?.thumbnailImage?.url ? (
+                  <div className="flex flex-col gap-2">
+                    <span className="text-xs text-muted-foreground font-semibold">
+                      Thumbnail
+                    </span>
+                    <img
+                      src={getImageUrl(project.media.thumbnailImage.url)}
+                      alt="Thumbnail"
+                      className="h-20 w-32 object-contain p-1 rounded border cursor-pointer hover:opacity-80 transition-opacity"
+                      onClick={() => setIsThumbnailOpen(true)}
+                    />
+                  </div>
+                ) : (
+                  <p className="text-muted-foreground">No thumbnail uploaded.</p>
+                )}
               </div>
-            ) : (
-              <p className="text-muted-foreground">No cover image uploaded.</p>
             )}
           </CardContent>
         </Card>
@@ -360,17 +388,17 @@ export default function ViewProject() {
               const allImages = project.media?.gallery?.flatMap(album => album.images) || [];
               if (allImages.length > 0) {
                 return (
-                  <div className="grid grid-cols-4 gap-2">
+                  <div className="grid grid-cols-4 gap-2 cursor-pointer" onClick={() => setIsGalleryOpen(true)}>
                     {allImages.slice(0, 4).map((img, idx) => (
                       <img
                         key={idx}
                         src={getImageUrl(img.url)}
                         alt={`Gallery ${idx + 1}`}
-                        className="h-16 w-full object-cover rounded border"
+                        className="h-16 w-full object-cover rounded border hover:opacity-80 transition-opacity"
                       />
                     ))}
                     {allImages.length > 4 && (
-                      <div className="h-16 flex items-center justify-center bg-muted rounded text-xs font-medium">
+                      <div className="h-16 flex items-center justify-center bg-muted hover:bg-slate-200 transition-colors rounded text-xs font-medium">
                         +{allImages.length - 4} more
                       </div>
                     )}
@@ -382,6 +410,24 @@ export default function ViewProject() {
           </CardContent>
         </Card>
         )}
+
+        <GalleryLightbox 
+          images={project?.media?.gallery?.flatMap(album => album.images) || []} 
+          open={isGalleryOpen} 
+          onOpenChange={setIsGalleryOpen} 
+        />
+
+        <GalleryLightbox 
+          images={project?.media?.coverImage ? [project.media.coverImage] : []} 
+          open={isLogoOpen} 
+          onOpenChange={setIsLogoOpen} 
+        />
+
+        <GalleryLightbox 
+          images={project?.media?.thumbnailImage ? [project.media.thumbnailImage] : []} 
+          open={isThumbnailOpen} 
+          onOpenChange={setIsThumbnailOpen} 
+        />
 
         {/* 7. Videos */}
         {!isPortfolioTour && (

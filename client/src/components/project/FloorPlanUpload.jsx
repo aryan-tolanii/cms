@@ -71,7 +71,7 @@ const FloorPlanUpload = ({ value = [], onChange }) => {
               </div>
 
               <div>
-                <Label>PDF File</Label>
+                <Label>Floor Plan File</Label>
 
                 <div className="mt-2 flex items-center gap-3">
                   <Button
@@ -79,13 +79,13 @@ const FloorPlanUpload = ({ value = [], onChange }) => {
                     variant="outline"
                     onClick={() => fileInputRefs.current[index]?.click()}
                   >
-                    Choose PDF
+                    Choose File
                   </Button>
 
                   <input
                     ref={(el) => (fileInputRefs.current[index] = el)}
                     type="file"
-                    accept="application/pdf"
+                    accept="application/pdf, image/png, image/jpeg, image/jpg"
                     className="hidden"
                     onChange={(e) =>
                       updateFile(index, e.target.files?.[0] || null)

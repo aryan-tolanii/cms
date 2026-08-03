@@ -66,8 +66,9 @@ const EditProject = () => {
     setIsSubmitting(true);
 
     try {
-      // Thumbnail
+      // Thumbnail & Cover
       const coverImage = data.media?.coverImage instanceof File ? data.media.coverImage : null;
+      const thumbnailImage = data.media?.thumbnailImage instanceof File ? data.media.thumbnailImage : null;
 
       // Gallery Albums
       const galleryAlbums = data.media?.gallery || [];
@@ -86,6 +87,7 @@ const EditProject = () => {
       // Filter out new file objects before sending JSON
       if (data.media) {
         data.media.coverImage = coverImage ? null : data.media.coverImage;
+        data.media.thumbnailImage = thumbnailImage ? null : data.media.thumbnailImage;
         data.media.gallery = cleanAlbums;
       }
       
@@ -104,9 +106,14 @@ const EditProject = () => {
       // Update project JSON data
       const response = await projectService.updateProject(id, data);
 
-      // Upload new thumbnail
+      // Upload new cover image
       if (coverImage) {
         await projectService.uploadCoverImage(id, coverImage);
+      }
+
+      // Upload new thumbnail image
+      if (thumbnailImage) {
+        await projectService.uploadThumbnailImage(id, thumbnailImage);
       }
 
       // Upload newly added gallery images inside albums

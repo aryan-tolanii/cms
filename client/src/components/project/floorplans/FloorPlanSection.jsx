@@ -10,24 +10,24 @@ import { useUploadFloorPlan } from "@/hooks/project/useFloorPlanMutations";
 
 export default function FloorPlanSection({ project }) {
   const [title, setTitle] = useState("");
-  const [pdf, setPdf] = useState(null);
+  const [file, setFile] = useState(null);
 
   const uploadMutation = useUploadFloorPlan();
 
   const handleUpload = async () => {
-    if (!pdf) return;
+    if (!file) return;
 
     try {
       await uploadMutation.mutateAsync({
         projectId: project._id,
         data: {
           title,
-          pdf,
+          file,
         },
       });
 
       setTitle("");
-      setPdf(null);
+      setFile(null);
     } catch (error) {
       console.error(error);
     }
@@ -51,19 +51,19 @@ export default function FloorPlanSection({ project }) {
         </div>
 
         <div>
-          <Label>PDF File</Label>
+          <Label>Floor Plan File</Label>
 
           <Input
             type="file"
-            accept="application/pdf"
-            onChange={(e) => setPdf(e.target.files?.[0] || null)}
+            accept="application/pdf, image/png, image/jpeg, image/jpg"
+            onChange={(e) => setFile(e.target.files?.[0] || null)}
           />
         </div>
       </div>
 
       <Button
         onClick={handleUpload}
-        disabled={!pdf || uploadMutation.isPending}
+        disabled={!file || uploadMutation.isPending}
       >
         {uploadMutation.isPending ? "Uploading..." : "Upload Floor Plan"}
       </Button>

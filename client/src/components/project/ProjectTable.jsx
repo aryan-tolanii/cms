@@ -70,7 +70,7 @@ const ProjectTable = ({ projects }) => {
                           project.media.coverImage.alt ||
                           project.general.projectName
                         }
-                        className="h-full w-full object-cover"
+                        className="h-full w-full object-contain p-1"
                       />
                     ) : (
                       <div className="flex h-full items-center justify-center text-xs text-slate-400">

@@ -41,14 +41,14 @@ router.delete("/:id", protect, remove);
 router.post(
   "/:projectId/floorplans",
   protect,
-  uploadFloorPlanMiddleware.single("pdf"),
+  uploadFloorPlanMiddleware.single("file"),
   uploadFloorPlan,
 );
 
 router.patch(
   "/:projectId/floorplans/:floorPlanId",
   protect,
-  uploadFloorPlanMiddleware.single("pdf"),
+  uploadFloorPlanMiddleware.single("file"),
   replaceFloorPlan,
 );
 

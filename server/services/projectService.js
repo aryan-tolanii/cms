@@ -2,7 +2,7 @@ import Project from "../models/Project.js";
 import ApiError from "../utils/ApiError.js";
 import { syncProjectFilters } from "./filterService.js";
 import path from "path";
-import floorPlanService from "./floorPlanService.js";
+import floorPlanService, { deleteFloorPlanFiles } from "./floorPlanService.js";
 import { backupProjects } from "../utils/databaseBackup.js";
 
 /**
@@ -496,9 +496,9 @@ const deleteProject = async (id) => {
   return project;
 };
 
-export const uploadProjectFloorPlan = async (projectId, title, pdfFile) => {
-  if (!pdfFile) {
-    throw new ApiError(400, "PDF file is required.");
+export const uploadProjectFloorPlan = async (projectId, title, floorPlanFile) => {
+  if (!floorPlanFile) {
+    throw new ApiError(400, "Floor plan file is required.");
   }
 
   const project = await Project.findById(projectId);
@@ -507,10 +507,12 @@ export const uploadProjectFloorPlan = async (projectId, title, pdfFile) => {
     throw new ApiError(404, "Project not found.");
   }
 
-  // Process uploaded PDF (move, convert, generate DZI & thumbnail)
+  // Process uploaded file (move, convert if PDF, etc.)
   const processedFloorPlan = await floorPlanService.processFloorPlan(
     project._id.toString(),
-    pdfFile.path,
+    floorPlanFile.path,
+    floorPlanFile.mimetype,
+    floorPlanFile.originalname
   );
 
   project.floorPlans.push({
@@ -524,7 +526,7 @@ export const uploadProjectFloorPlan = async (projectId, title, pdfFile) => {
 
     pages: processedFloorPlan.pages.map((page) => ({
       pageNumber: page.pageNumber,
-      dziPath: path.relative(process.cwd(), page.dziPath),
+      dziPath: page.dziPath ? path.relative(process.cwd(), page.dziPath) : null,
     })),
 
     displayOrder: project.floorPlans.length,
@@ -568,7 +570,7 @@ export const replaceProjectFloorPlan = async (
   projectId,
   floorPlanId,
   title,
-  pdfFile,
+  floorPlanFile,
 ) => {
   const project = await Project.findById(projectId);
 
@@ -582,8 +584,8 @@ export const replaceProjectFloorPlan = async (
     throw new ApiError(404, "Floor plan not found.");
   }
 
-  // If no PDF is uploaded, update only the title.
-  if (!pdfFile) {
+  // If no new file is uploaded, update only the title.
+  if (!floorPlanFile) {
     if (typeof title === "string" && title.trim()) {
       floorPlan.title = title.trim();
     }
@@ -592,11 +594,13 @@ export const replaceProjectFloorPlan = async (
 
     return project;
   }
-  // Replace the existing floor plan with the new PDF.
+  // Replace the existing floor plan with the new file.
   const newFloorPlan = await floorPlanService.replaceFloorPlan(
     project._id.toString(),
-    pdfFile.path,
+    floorPlanFile.path,
     floorPlan.originalPdf,
+    floorPlanFile.mimetype,
+    floorPlanFile.originalname
   );
 
   // Update metadata.
@@ -609,7 +613,7 @@ export const replaceProjectFloorPlan = async (
   floorPlan.pageCount = newFloorPlan.pageCount;
   floorPlan.pages = newFloorPlan.pages.map((page) => ({
     pageNumber: page.pageNumber,
-    dziPath: path.relative(process.cwd(), page.dziPath),
+    dziPath: page.dziPath ? path.relative(process.cwd(), page.dziPath) : null,
   }));
 
   await project.save();

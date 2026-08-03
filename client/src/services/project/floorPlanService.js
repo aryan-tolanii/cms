@@ -5,8 +5,8 @@ export const uploadFloorPlan = async (projectId, payload) => {
 
   formData.append("title", payload.title);
 
-  if (payload.pdf) {
-    formData.append("pdf", payload.pdf);
+  if (payload.file) {
+    formData.append("file", payload.file);
   }
 
   const response = await api.post(
@@ -29,8 +29,8 @@ export const replaceFloorPlan = async (projectId, floorPlanId, payload) => {
     formData.append("title", payload.title);
   }
 
-  if (payload.pdf) {
-    formData.append("pdf", payload.pdf);
+  if (payload.file) {
+    formData.append("file", payload.file);
   }
 
   const response = await api.patch(

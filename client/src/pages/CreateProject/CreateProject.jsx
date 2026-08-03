@@ -23,6 +23,7 @@ const CreateProject = () => {
 
     try {
       const coverImage = data.media?.coverImage;
+      const thumbnailImage = data.media?.thumbnailImage;
       const galleryAlbums = data.media?.gallery || [];
       const brochures = data.brochures || [];
       const legalDocuments = data.legalDocuments || [];
@@ -38,6 +39,7 @@ const CreateProject = () => {
       // Remove File objects before sending JSON
       if (data.media) {
         data.media.coverImage = null;
+        data.media.thumbnailImage = null;
         data.media.gallery = [];
       }
 
@@ -60,6 +62,11 @@ const CreateProject = () => {
       // Upload cover image
       if (coverImage) {
         await projectService.uploadCoverImage(project._id, coverImage);
+      }
+
+      // Upload thumbnail image
+      if (thumbnailImage) {
+        await projectService.uploadThumbnailImage(project._id, thumbnailImage);
       }
 
       // Upload gallery albums and images

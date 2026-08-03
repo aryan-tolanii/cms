@@ -327,6 +327,16 @@ const mediaSchema = new Schema(
         trim: true,
       },
     },
+    thumbnailImage: {
+      url: {
+        type: String,
+        trim: true,
+      },
+      alt: {
+        type: String,
+        trim: true,
+      },
+    },
     gallery: {
       type: [galleryAlbumSchema],
       default: [],

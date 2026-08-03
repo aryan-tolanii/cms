@@ -75,6 +75,35 @@ const projectService = {
   },
 
   /**
+   * Upload project thumbnail image
+   */
+  uploadThumbnailImage: async (projectId, file, alt = "") => {
+    const options = {
+      maxSizeMB: 1,
+      maxWidthOrHeight: 1920,
+      useWebWorker: true,
+    };
+    const compressedFile = await imageCompression(file, options);
+    
+    const formData = new FormData();
+
+    formData.append("file", compressedFile);
+    formData.append("alt", alt);
+
+    const { data } = await api.post(
+      `/projects/${projectId}/media/thumbnail`,
+      formData,
+      {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      },
+    );
+
+    return data;
+  },
+
+  /**
    * Upload gallery image
    */
   /**
@@ -180,7 +209,7 @@ const projectService = {
   uploadFloorPlan: async (projectId, file, title = "") => {
     const formData = new FormData();
 
-    formData.append("pdf", file);
+    formData.append("file", file);
     formData.append("title", title);
 
     const { data } = await api.post(

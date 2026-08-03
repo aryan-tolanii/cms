@@ -64,6 +64,40 @@ const uploadCoverImage = async (projectId, file, alt) => {
 };
 
 /**
+ * Uploads (and replaces) a project's thumbnail image.
+ * If an old thumbnail image exists, it is deleted from Cloudinary.
+ *
+ * @param {string} projectId - MongoDB _id of the project
+ * @param {object} file - Multer file object
+ * @param {string} [alt] - Optional alt text
+ * @returns {Promise<object>} The updated project document
+ */
+const uploadThumbnailImage = async (projectId, file, alt) => {
+  if (!file) {
+    throw new ApiError(400, "No file was uploaded");
+  }
+
+  const project = await getProjectOrThrow(projectId, file);
+
+  const cloudinaryResponse = await uploadOnCloudinary(file.path, `portfolio-cms/projects/${projectId}/thumbnail`);
+  
+  if (!cloudinaryResponse) {
+    throw new ApiError(500, "Failed to upload image to Cloudinary");
+  }
+
+  const previousThumbnailUrl = project.media?.thumbnailImage?.url;
+
+  project.media.thumbnailImage = { url: cloudinaryResponse.secure_url, alt: alt || "" };
+  await project.save();
+
+  if (previousThumbnailUrl && previousThumbnailUrl.includes("cloudinary.com")) {
+    await deleteFromCloudinary(previousThumbnailUrl, "image");
+  }
+
+  return project;
+};
+
+/**
  * Uploads a new gallery image and appends it to the project's existing
  * gallery array. Existing gallery images are never overwritten or removed.
  *
@@ -253,6 +287,7 @@ const uploadLegalDocument = async (projectId, file, title) => {
 
 export {
   uploadCoverImage,
+  uploadThumbnailImage,
   uploadGalleryImage,
   uploadVideo,
   uploadFloorPlan,
