@@ -28,6 +28,7 @@ import {
 import { PROJECT_SECTIONS } from "@/constants/projectSections";
 import projectService from "@/services/project/projectService";
 import { ROUTES } from "@/constants/routes";
+import { getImageUrl } from "@/lib/utils";
 
 export default function ViewProject() {
   const { id } = useParams();
@@ -75,8 +76,6 @@ export default function ViewProject() {
       <div className="p-8 text-center text-red-500">Project not found.</div>
     );
   }
-
-  const API_BASE_URL = import.meta.env.VITE_API_URL.replace("/api", "");
 
   return (
     <div className="container mx-auto space-y-6 p-6">
@@ -326,7 +325,7 @@ export default function ViewProject() {
             {project.media?.coverImage?.url ? (
               <div className="flex items-center gap-3">
                 <img
-                  src={`${API_BASE_URL}${project.media.coverImage.url}`}
+                  src={getImageUrl(project.media.coverImage.url)}
                   alt="Banner"
                   className="h-16 w-24 object-cover rounded border"
                 />
@@ -365,7 +364,7 @@ export default function ViewProject() {
                     {allImages.slice(0, 4).map((img, idx) => (
                       <img
                         key={idx}
-                        src={`${API_BASE_URL}${img.url}`}
+                        src={getImageUrl(img.url)}
                         alt={`Gallery ${idx + 1}`}
                         className="h-16 w-full object-cover rounded border"
                       />
@@ -443,7 +442,7 @@ export default function ViewProject() {
               <ul className="list-disc pl-4 space-y-1">
                 {project.brochures.map((doc, idx) => (
                   <li key={idx} className="truncate text-blue-600 underline">
-                    <a href={`${API_BASE_URL}${doc.url}`} target="_blank" rel="noreferrer">
+                    <a href={getImageUrl(doc.url)} target="_blank" rel="noreferrer">
                       <FileText className="inline h-4 w-4 mr-1" /> {doc.title || `Brochure ${idx + 1}`}
                     </a>
                   </li>
@@ -477,7 +476,7 @@ export default function ViewProject() {
               <ul className="list-disc pl-4 space-y-1">
                 {project.legalDocuments.map((doc, idx) => (
                   <li key={idx} className="truncate text-blue-600 underline">
-                    <a href={`${API_BASE_URL}${doc.url}`} target="_blank" rel="noreferrer">
+                    <a href={getImageUrl(doc.url)} target="_blank" rel="noreferrer">
                       <ShieldCheck className="inline h-4 w-4 mr-1" /> {doc.title || `Legal Document ${idx + 1}`}
                     </a>
                   </li>

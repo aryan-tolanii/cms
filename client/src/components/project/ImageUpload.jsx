@@ -3,6 +3,7 @@ import { ImagePlus, Trash2 } from "lucide-react";
 import { toast } from "sonner";
 
 import { Button } from "@/components/ui/button";
+import { getImageUrl } from "@/lib/utils";
 
 const MAX_SIZE = 10 * 1024 * 1024;
 
@@ -36,10 +37,7 @@ const ImageUpload = ({
             value.url &&
             !(value instanceof File)
         ) {
-            const apiBaseUrl =
-                import.meta.env.VITE_API_URL.replace("/api", "");
-
-            setPreview(`${apiBaseUrl}${value.url}`);
+            setPreview(getImageUrl(value.url));
             return;
         }
 

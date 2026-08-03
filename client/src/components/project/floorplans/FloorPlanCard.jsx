@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { getImageUrl } from "@/lib/utils";
 
 export default function FloorPlanCard({ floorPlan }) {
   return (
@@ -7,7 +8,7 @@ export default function FloorPlanCard({ floorPlan }) {
       <CardContent className="p-4">
         <div className="flex gap-4">
           <img
-            src={`${import.meta.env.VITE_API_URL.replace("/api", "")}/${floorPlan.thumbnail}`}
+            src={getImageUrl(floorPlan.thumbnail)}
             alt={floorPlan.title}
             className="h-32 w-32 rounded object-cover border"
           />

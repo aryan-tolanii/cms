@@ -3,6 +3,7 @@ import { ImagePlus, Trash2 } from "lucide-react";
 import { toast } from "sonner";
 
 import { Button } from "@/components/ui/button";
+import { getImageUrl } from "@/lib/utils";
 
 const MAX_SIZE = 10 * 1024 * 1024;
 
@@ -30,13 +31,11 @@ const GalleryImageUpload = ({
       return;
     }
 
-    const apiBaseUrl = import.meta.env.VITE_API_URL.replace("/api", "");
-
     const previewList = value.map((item) => {
       // Existing image
       if (item?.url) {
         return {
-          src: `${apiBaseUrl}${item.url}`,
+          src: getImageUrl(item.url),
           name: item.caption || "Gallery Image",
           existing: true,
         };

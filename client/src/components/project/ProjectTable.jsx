@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ROUTES } from "@/constants/routes";
 
 import DeleteProjectDialog from "./DeleteProjectDialog";
+import { getImageUrl } from "@/lib/utils";
 
 const statusStyles = {
   Draft: "bg-yellow-100 text-yellow-700",
@@ -14,9 +15,6 @@ const statusStyles = {
 
 const ProjectTable = ({ projects }) => {
   const navigate = useNavigate();
-
-  const API_BASE_URL =
-    import.meta.env.VITE_API_URL.replace("/api", "");
 
   const handleEdit = (id) => {
     navigate(
@@ -67,7 +65,7 @@ const ProjectTable = ({ projects }) => {
                   <div className="h-16 w-16 overflow-hidden rounded-lg border bg-slate-100">
                     {project.media?.coverImage?.url ? (
                       <img
-                        src={`${API_BASE_URL}${project.media.coverImage.url}`}
+                        src={getImageUrl(project.media.coverImage.url)}
                         alt={
                           project.media.coverImage.alt ||
                           project.general.projectName
