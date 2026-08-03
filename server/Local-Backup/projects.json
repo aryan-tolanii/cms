@@ -3468,45 +3468,27 @@
     "parentProject": null,
     "contact": {
       "phone": "7383212020",
-      "whatsapp": "",
-      "email": "",
       "website": "https://balarbuilders.com/",
       "facebook": "https://www.facebook.com/thebalarbuilders",
-      "instagram": "https://balarbuilders.com/",
-      "linkedin": "",
-      "youtube": ""
+      "instagram": "https://balarbuilders.com/"
     },
     "location": {
       "address": "vapi daman road, near vaibhav water park, kunta, vapi, gujarat-396191",
-      "city": "",
-      "state": "",
-      "pincode": "",
       "googleMaps": "https://www.google.com/maps/place/Balar+Builders+Pvt+Ltd/@20.420313,72.8707318,195m/data=!3m1!1e3!4m6!3m5!1s0x3be0d13679235a7b:0xb2a39f5e8c8cbe83!8m2!3d20.42016!4d72.8710108!16s%2Fg%2F11jxrxrs0z?entry=tts&skid=19fe80c8-2cde-4a50-96b9-361b4d6d7033"
     },
     "specifications": [],
     "filters": {
-      "city": "",
-      "area": "",
-      "propertyType": "",
       "amenities": [],
       "tags": []
     },
     "media": {
-      "coverImage": {
-        "url": "/projects/6a6fbaa35ec03d58613d4357/cover/1785707172606-9ae1ccf9c2cd",
-        "alt": ""
-      },
+      "coverImage": null,
       "gallery": []
     },
     "videos": [],
     "brochures": [],
     "legalDocuments": [],
     "floorPlans": [],
-    "seo": {
-      "metaTitle": "",
-      "metaDescription": "",
-      "shareDescription": ""
-    },
     "status": {
       "featured": false,
       "published": false,
@@ -3514,7 +3496,7 @@
       "isDeleted": false
     },
     "createdAt": "2026-08-02T21:46:11.068Z",
-    "updatedAt": "2026-08-02T21:46:12.909Z",
+    "updatedAt": "2026-08-03T06:32:51.638Z",
     "__v": 0
   },
   {
