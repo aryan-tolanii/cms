@@ -100,7 +100,7 @@ const Projects = () => {
 
     return (
         <div className="space-y-6">
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 sm:gap-0">
                 <div>
                     <h1 className="text-3xl font-bold">
                         Projects
@@ -111,15 +111,15 @@ const Projects = () => {
                     </p>
                 </div>
 
-                <Link to={ROUTES.PROJECT_CREATE}>
-                    <Button>
+                <Link to={ROUTES.PROJECT_CREATE} className="w-full sm:w-auto">
+                    <Button className="w-full sm:w-auto">
                         + New Project
                     </Button>
                 </Link>
             </div>
 
-            <div className="flex items-center gap-4">
-                <div className="relative flex-1">
+            <div className="flex flex-col md:flex-row flex-wrap items-stretch md:items-center gap-4">
+                <div className="relative flex-1 min-w-[200px]">
                     <Search
                         size={18}
                         className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"
@@ -129,7 +129,7 @@ const Projects = () => {
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
                         placeholder="Search by project or builder..."
-                        className="pl-10"
+                        className="pl-10 w-full"
                     />
                 </div>
 
@@ -137,7 +137,7 @@ const Projects = () => {
                     value={status}
                     onValueChange={setStatus}
                 >
-                    <SelectTrigger className="w-44">
+                    <SelectTrigger className="w-full md:w-44">
                         <SelectValue placeholder="Status" />
                     </SelectTrigger>
 
@@ -164,7 +164,7 @@ const Projects = () => {
                     value={projectCategory}
                     onValueChange={setProjectCategory}
                 >
-                    <SelectTrigger className="w-52">
+                    <SelectTrigger className="w-full md:w-52">
                         <SelectValue placeholder="Category" />
                     </SelectTrigger>
 
@@ -187,7 +187,7 @@ const Projects = () => {
                     value={featured}
                     onValueChange={setFeatured}
                 >
-                    <SelectTrigger className="w-44">
+                    <SelectTrigger className="w-full md:w-44">
                         <SelectValue placeholder="Featured" />
                     </SelectTrigger>
 
@@ -210,7 +210,7 @@ const Projects = () => {
                     value={sort}
                     onValueChange={setSort}
                 >
-                    <SelectTrigger className="w-52">
+                    <SelectTrigger className="w-full md:w-52">
                         <SelectValue placeholder="Sort By" />
                     </SelectTrigger>
 
@@ -269,14 +269,14 @@ const Projects = () => {
                 <>
                     <ProjectTable projects={projects} />
 
-                    <div className="mt-6 flex items-center justify-between rounded-lg border bg-white p-4">
-                        <div className="text-sm text-slate-500">
+                    <div className="mt-6 flex flex-col md:flex-row items-center justify-between rounded-lg border bg-white p-4 gap-4">
+                        <div className="text-sm text-slate-500 text-center md:text-left">
                             Showing <strong>{startItem}</strong> -{" "}
                             <strong>{endItem}</strong> of{" "}
                             <strong>{totalItems}</strong> projects
                         </div>
 
-                        <div className="flex items-center gap-3">
+                        <div className="flex flex-wrap items-center justify-center gap-3">
 
                             <Select
                                 value={String(limit)}
@@ -311,7 +311,7 @@ const Projects = () => {
                                 Previous
                             </Button>
 
-                            <span className="text-sm font-medium">
+                            <span className="text-sm font-medium whitespace-nowrap">
                                 Page {currentPage} of {totalPages}
                             </span>
 

@@ -1,17 +1,28 @@
+import { useState } from "react";
 import { Outlet } from "react-router-dom";
 
 import Sidebar from "@/components/layout/Sidebar";
 import Navbar from "@/components/layout/Navbar";
 
 const DashboardLayout = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
   return (
-    <div className="flex min-h-screen bg-slate-100 dark:bg-slate-950 dark:text-slate-50">
-      <Sidebar />
+    <div className="flex min-h-screen bg-slate-100 dark:bg-slate-950 dark:text-slate-50 overflow-hidden relative">
+      {/* Mobile Overlay */}
+      {isSidebarOpen && (
+        <div 
+          className="fixed inset-0 z-40 bg-black/50 lg:hidden"
+          onClick={() => setIsSidebarOpen(false)}
+        />
+      )}
 
-      <div className="flex flex-1 flex-col">
-        <Navbar />
+      <Sidebar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />
 
-        <main className="flex-1 p-6">
+      <div className="flex flex-1 flex-col min-w-0">
+        <Navbar toggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)} />
+
+        <main className="flex-1 p-4 sm:p-6 overflow-auto">
           <Outlet />
         </main>
       </div>

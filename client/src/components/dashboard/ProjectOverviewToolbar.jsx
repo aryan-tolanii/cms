@@ -5,7 +5,7 @@ const ProjectOverviewToolbar = ({
 }) => {
     return (
         <div className="mb-6 rounded-lg border bg-white p-4 shadow-sm">
-            <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-5">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-5">
 
                 <div>
                     <label className="mb-1 block text-sm font-medium">

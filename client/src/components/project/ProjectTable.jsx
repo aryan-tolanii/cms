@@ -29,7 +29,7 @@ const ProjectTable = ({ projects }) => {
   };
 
   return (
-    <div className="overflow-hidden rounded-xl border bg-white">
+    <div className="overflow-x-auto rounded-xl border bg-white">
       <table className="w-full">
         <thead className="bg-slate-100">
           <tr>
