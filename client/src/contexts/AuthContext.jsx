@@ -10,7 +10,7 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     const initAuth = async () => {
-      const token = localStorage.getItem("accessToken");
+      const token = sessionStorage.getItem("accessToken");
       
       if (!token) {
         setIsLoading(false);
@@ -25,7 +25,7 @@ export const AuthProvider = ({ children }) => {
         }
       } catch (error) {
         console.error("Auth initialization failed", error);
-        localStorage.removeItem("accessToken");
+        sessionStorage.removeItem("accessToken");
       } finally {
         setIsLoading(false);
       }
@@ -46,7 +46,7 @@ export const AuthProvider = ({ children }) => {
 
       setUser(response.data.admin);
 
-      localStorage.setItem(
+      sessionStorage.setItem(
         "accessToken",
         response.data.token
       );
@@ -65,7 +65,7 @@ export const AuthProvider = ({ children }) => {
     try {
       await authService.logout();
 
-      localStorage.removeItem("accessToken");
+      sessionStorage.removeItem("accessToken");
 
       setUser(null);
       setIsAuthenticated(false);
