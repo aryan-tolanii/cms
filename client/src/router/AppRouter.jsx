@@ -1,17 +1,18 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
+import { Suspense, lazy } from "react";
 
 import { ROUTES } from "@/constants/routes";
 
 import AuthLayout from "@/layouts/AuthLayout";
 import DashboardLayout from "@/layouts/DashboardLayout";
 
-import Login from "@/pages/Login/Login";
-import Dashboard from "@/pages/Dashboard/Dashboard";
-import Projects from "@/pages/Projects/Projects";
-import CreateProject from "@/pages/CreateProject/CreateProject";
-import EditProject from "@/pages/EditProject/EditProject";
-import ViewProject from "@/pages/ViewProject/ViewProject";
-import NotFound from "@/pages/NotFound/NotFound";
+const Login = lazy(() => import("@/pages/Login/Login"));
+const Dashboard = lazy(() => import("@/pages/Dashboard/Dashboard"));
+const Projects = lazy(() => import("@/pages/Projects/Projects"));
+const CreateProject = lazy(() => import("@/pages/CreateProject/CreateProject"));
+const EditProject = lazy(() => import("@/pages/EditProject/EditProject"));
+const ViewProject = lazy(() => import("@/pages/ViewProject/ViewProject"));
+const NotFound = lazy(() => import("@/pages/NotFound/NotFound"));
 
 import ProtectedRoute from "@/router/ProtectedRoute";
 import GuestRoute from "@/router/GuestRoute";
@@ -38,7 +39,9 @@ const router = createBrowserRouter([
         path: ROUTES.LOGIN,
         element: (
           <GuestRoute>
-            <Login />
+            <Suspense fallback={<div className="flex h-screen w-full items-center justify-center">Loading...</div>}>
+              <Login />
+            </Suspense>
           </GuestRoute>
         ),
       },
@@ -53,7 +56,9 @@ const router = createBrowserRouter([
         path: ROUTES.DASHBOARD,
         element: (
           <ProtectedRoute>
-            <Dashboard />
+            <Suspense fallback={<div className="flex h-full w-full items-center justify-center p-8">Loading page...</div>}>
+              <Dashboard />
+            </Suspense>
           </ProtectedRoute>
         ),
       },
@@ -62,7 +67,9 @@ const router = createBrowserRouter([
         path: ROUTES.PROJECT_CREATE,
         element: (
           <ProtectedRoute>
-            <CreateProject />
+            <Suspense fallback={<div className="flex h-full w-full items-center justify-center p-8">Loading page...</div>}>
+              <CreateProject />
+            </Suspense>
           </ProtectedRoute>
         ),
       },
@@ -71,7 +78,9 @@ const router = createBrowserRouter([
         path: ROUTES.PROJECT_EDIT,
         element: (
           <ProtectedRoute>
-            <EditProject />
+            <Suspense fallback={<div className="flex h-full w-full items-center justify-center p-8">Loading page...</div>}>
+              <EditProject />
+            </Suspense>
           </ProtectedRoute>
         ),
       },
@@ -80,7 +89,9 @@ const router = createBrowserRouter([
         path: ROUTES.PROJECT_VIEW,
         element: (
           <ProtectedRoute>
-            <ViewProject />
+            <Suspense fallback={<div className="flex h-full w-full items-center justify-center p-8">Loading page...</div>}>
+              <ViewProject />
+            </Suspense>
           </ProtectedRoute>
         ),
       },
@@ -89,7 +100,9 @@ const router = createBrowserRouter([
         path: ROUTES.PROJECTS,
         element: (
           <ProtectedRoute>
-            <Projects />
+            <Suspense fallback={<div className="flex h-full w-full items-center justify-center p-8">Loading page...</div>}>
+              <Projects />
+            </Suspense>
           </ProtectedRoute>
         ),
       },
@@ -98,7 +111,11 @@ const router = createBrowserRouter([
 
   {
     path: "*",
-    element: <NotFound />,
+    element: (
+      <Suspense fallback={<div className="flex h-screen w-full items-center justify-center">Loading...</div>}>
+        <NotFound />
+      </Suspense>
+    ),
   },
 ]);
 

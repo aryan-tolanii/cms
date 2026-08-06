@@ -106,9 +106,6 @@ const projectService = {
   /**
    * Upload gallery image
    */
-  /**
-   * Upload gallery image
-   */
   uploadGalleryImage: async (
     projectId,
     file,

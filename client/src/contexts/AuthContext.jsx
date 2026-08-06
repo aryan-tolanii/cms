@@ -1,4 +1,4 @@
-import { createContext, useContext, useMemo, useState } from "react";
+import { createContext, useContext, useMemo, useState, useEffect } from "react";
 import authService from "@/services/auth/authService";
 
 const AuthContext = createContext(null);
@@ -6,7 +6,33 @@ const AuthContext = createContext(null);
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const initAuth = async () => {
+      const token = localStorage.getItem("accessToken");
+      
+      if (!token) {
+        setIsLoading(false);
+        return;
+      }
+
+      try {
+        const response = await authService.getCurrentUser();
+        if (response.success) {
+          setUser(response.data.admin);
+          setIsAuthenticated(true);
+        }
+      } catch (error) {
+        console.error("Auth initialization failed", error);
+        localStorage.removeItem("accessToken");
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    initAuth();
+  }, []);
 
   const login = async (credentials) => {
     setIsLoading(true);

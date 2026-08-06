@@ -22,7 +22,7 @@ const DashboardLayout = () => {
       <div className="flex flex-1 flex-col min-w-0">
         <Navbar toggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)} />
 
-        <main className="flex-1 p-4 sm:p-6 overflow-auto">
+        <main id="main-scroll-container" className="flex-1 p-4 sm:p-6 overflow-auto relative">
           <Outlet />
         </main>
       </div>
